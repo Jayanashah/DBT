@@ -1,0 +1,11 @@
+jayana_dbt_tutorial:
+  outputs:
+    dev:
+      catalog: dbt_tutorial
+      host: dbc-d3a2313e-5682.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/d40e3b07ecd461d7
+      schema: default
+      threads: 1
+      token: 
+      type: databricks
+  target: dev
