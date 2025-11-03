@@ -1,7 +1,7 @@
 
   
   
-  create or replace view `dbt_tutorial`.`default`.`bronze_date`
+  create or replace view `dbt_tutorial`.`bronze`.`bronze_date`
   
   as (
     SELECT 

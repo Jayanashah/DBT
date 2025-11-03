@@ -4,7 +4,35 @@ models:
  - name: bronze_date
    config:
          materialized: view
+         schema: Bronze
 
  - name: bronze_product
    config:
          materialized: view
+
+# Generic Tests
+ - name: bronze_sales
+   columns:
+    - name: sales_id
+      data_tests:
+          - unique
+          - not_null
+    - name: gross_amount
+      data_tests:
+          - generic_nonnegative
+
+
+ - name: bronze_store
+   columns:
+    - name: store_sk
+      data_tests:
+          - unique
+          - not_null
+    - name: country
+      data_tests: 
+          - accepted_values: 
+              arguments:
+                values: ['USA', 'Canada', 'Mexico'] 
+              config:
+                severity: warn
+

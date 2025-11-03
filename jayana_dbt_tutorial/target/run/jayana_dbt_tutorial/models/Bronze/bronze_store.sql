@@ -1,7 +1,7 @@
 
   
     
-        create or replace table `dbt_tutorial`.`default`.`bronze_store`
+        create or replace table `dbt_tutorial`.`bronze`.`bronze_store`
       
       
   using delta
