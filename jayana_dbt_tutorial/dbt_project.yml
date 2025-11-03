@@ -38,6 +38,6 @@ models:
     Silver:
       +materialized: table
       schema: Silver
-    Gilver:
+    Gold:
       +materialized: table
       schema: Gold
