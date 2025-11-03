@@ -34,3 +34,10 @@ models:
     # Config indicated by + and applies to all files under models/example/
     Bronze:
       +materialized: table
+      schema: Bronze
+    Silver:
+      +materialized: table
+      schema: Silver
+    Gilver:
+      +materialized: table
+      schema: Gold

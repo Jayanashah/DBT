@@ -4,6 +4,7 @@ models:
  - name: bronze_date
    config:
          materialized: view
+         schema: Bronze
 
  - name: bronze_product
    config:
