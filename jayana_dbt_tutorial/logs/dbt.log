@@ -371,3 +371,1903 @@ FROM
 [0m13:56:20.958880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002029635FC80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020291AED490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020296CB9EE0>]}
 [0m13:56:20.958880 [debug] [MainThread]: Flushing usage events
 [0m13:56:21.959223 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:34:26.806751 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE572854C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE557A7380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE570564B0>]}
+
+
+============================== 17:34:26.827343 | fd6481fd-5708-46d2-9ae1-1fcd3d44a11a ==============================
+[0m17:34:26.827343 [info ] [MainThread]: Running with dbt=1.10.13
+[0m17:34:26.829115 [debug] [MainThread]: running dbt with arguments {'profiles_dir': 'C:\\DBT\\jayana_dbt_tutorial', 'log_format': 'default', 'printer_width': '80', 'target_path': 'None', 'use_colors': 'True', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': 'C:\\DBT\\jayana_dbt_tutorial\\logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt run', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m17:34:36.587598 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m17:34:36.588599 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m17:34:36.588599 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m17:34:37.716738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fd6481fd-5708-46d2-9ae1-1fcd3d44a11a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE788B5370>]}
+[0m17:34:37.782553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fd6481fd-5708-46d2-9ae1-1fcd3d44a11a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE57CDFFB0>]}
+[0m17:34:37.783563 [info ] [MainThread]: Registered adapter: databricks=1.10.14
+[0m17:34:38.345848 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m17:34:38.547620 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:34:38.547620 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:34:38.555021 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.jayana_dbt_tutorial.bronze
+[0m17:34:38.583950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fd6481fd-5708-46d2-9ae1-1fcd3d44a11a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE79E6CD70>]}
+[0m17:34:38.659980 [debug] [MainThread]: Wrote artifact WritableManifest to C:\DBT\jayana_dbt_tutorial\target\manifest.json
+[0m17:34:38.665753 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\DBT\jayana_dbt_tutorial\target\semantic_manifest.json
+[0m17:34:38.693628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fd6481fd-5708-46d2-9ae1-1fcd3d44a11a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE79D6B320>]}
+[0m17:34:38.694625 [info ] [MainThread]: Found 6 models, 6 sources, 699 macros
+[0m17:34:38.694625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fd6481fd-5708-46d2-9ae1-1fcd3d44a11a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE793262A0>]}
+[0m17:34:38.697623 [info ] [MainThread]: 
+[0m17:34:38.697623 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:34:38.698623 [info ] [MainThread]: 
+[0m17:34:38.698623 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:34:38.699623 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:34:38.706172 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_dbt_tutorial) - Creating connection
+[0m17:34:38.707171 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt_tutorial'
+[0m17:34:38.717864 [debug] [ThreadPool]: Using databricks connection "list_dbt_tutorial"
+[0m17:34:38.717864 [debug] [ThreadPool]: On list_dbt_tutorial: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "connection_name": "list_dbt_tutorial"} */
+
+    show databases
+  
+[0m17:34:38.717864 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:34:49.301192 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b677-84b0-195f-9637-5bc583528488) - Created
+[0m17:35:03.260696 [debug] [ThreadPool]: SQL status: OK in 24.540 seconds
+[0m17:35:03.291323 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f0b677-84b0-195f-9637-5bc583528488, command-id=01f0b677-84ea-169d-9204-331043862ecd) - Closing
+[0m17:35:03.652406 [debug] [ThreadPool]: On list_dbt_tutorial: Close
+[0m17:35:03.654557 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b677-84b0-195f-9637-5bc583528488) - Closing
+[0m17:35:03.847452 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_dbt_tutorial_default) - Creating connection
+[0m17:35:03.852253 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt_tutorial_default'
+[0m17:35:03.877413 [debug] [ThreadPool]: Using databricks connection "list_dbt_tutorial_default"
+[0m17:35:03.880412 [debug] [ThreadPool]: On list_dbt_tutorial_default: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "connection_name": "list_dbt_tutorial_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'dbt_tutorial' 
+  AND table_schema = 'default'
+
+  
+[0m17:35:03.883072 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:35:04.959520 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b677-8e19-1bc3-859d-c3b961145fc2) - Created
+[0m17:35:10.136414 [debug] [ThreadPool]: SQL status: OK in 6.250 seconds
+[0m17:35:10.143885 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f0b677-8e19-1bc3-859d-c3b961145fc2, command-id=01f0b677-8e44-1baa-8d11-56e6c73537e2) - Closing
+[0m17:35:10.145894 [debug] [ThreadPool]: On list_dbt_tutorial_default: Close
+[0m17:35:10.146817 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b677-8e19-1bc3-859d-c3b961145fc2) - Closing
+[0m17:35:10.408222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fd6481fd-5708-46d2-9ae1-1fcd3d44a11a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE799A6C90>]}
+[0m17:35:10.422411 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_customer
+[0m17:35:10.423158 [info ] [Thread-1 (]: 1 of 6 START sql view model default.bronze_customer ............................ [RUN]
+[0m17:35:10.425948 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_customer) - Creating connection
+[0m17:35:10.426980 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_customer'
+[0m17:35:10.427972 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_customer
+[0m17:35:10.439493 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_customer"
+[0m17:35:10.441978 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_customer
+[0m17:35:10.457545 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:35:10.459545 [warn ] [Thread-1 (]: [[33mWARNING[0m]: Use revamped materializations based on separating create and insert.  This allows more performant column comments, as well as new column features.
+You may opt into the new behavior sooner by setting `flags.use_materialization_v2` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m17:35:10.460545 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': 'fd6481fd-5708-46d2-9ae1-1fcd3d44a11a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE79EF21B0>]}
+[0m17:35:10.474639 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_customer`
+[0m17:35:10.485174 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_customer"
+[0m17:35:10.487153 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_customer"
+[0m17:35:10.487153 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_customer: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_customer"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_customer`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_customer`
+  )
+
+[0m17:35:10.487153 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:35:11.114110 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b677-91ca-1287-90ff-2b4903ba13b7) - Created
+[0m17:35:20.630241 [debug] [Thread-1 (]: SQL status: OK in 10.140 seconds
+[0m17:35:20.631241 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b677-91ca-1287-90ff-2b4903ba13b7, command-id=01f0b677-960c-1954-9471-909fdad3fadf) - Closing
+[0m17:35:20.646517 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:35:20.650500 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_customer: Close
+[0m17:35:20.652005 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b677-91ca-1287-90ff-2b4903ba13b7) - Closing
+[0m17:35:20.867432 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fd6481fd-5708-46d2-9ae1-1fcd3d44a11a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE55C081D0>]}
+[0m17:35:20.868443 [info ] [Thread-1 (]: 1 of 6 OK created sql view model default.bronze_customer ....................... [[32mOK[0m in 10.41s]
+[0m17:35:20.869484 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_customer
+[0m17:35:20.870544 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_date
+[0m17:35:20.870544 [info ] [Thread-1 (]: 2 of 6 START sql view model default.bronze_date ................................ [RUN]
+[0m17:35:20.873067 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_date) - Creating connection
+[0m17:35:20.873067 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_date'
+[0m17:35:20.874075 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_date
+[0m17:35:20.880457 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_date"
+[0m17:35:20.882067 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_date
+[0m17:35:20.888077 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:35:20.890076 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_date`
+[0m17:35:20.891076 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_date"
+[0m17:35:20.892977 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_date"
+[0m17:35:20.893594 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_date: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_date"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_date`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_date`
+  )
+
+[0m17:35:20.895191 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:35:21.656387 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b677-9815-1752-bc44-efa2bfa8f194) - Created
+[0m17:35:22.805879 [debug] [Thread-1 (]: SQL status: OK in 1.910 seconds
+[0m17:35:22.806882 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b677-9815-1752-bc44-efa2bfa8f194, command-id=01f0b677-9830-10ba-849b-8bc401b8b8a9) - Closing
+[0m17:35:22.807883 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:35:22.808883 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_date: Close
+[0m17:35:22.808883 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b677-9815-1752-bc44-efa2bfa8f194) - Closing
+[0m17:35:22.990574 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fd6481fd-5708-46d2-9ae1-1fcd3d44a11a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE79F09460>]}
+[0m17:35:22.990574 [info ] [Thread-1 (]: 2 of 6 OK created sql view model default.bronze_date ........................... [[32mOK[0m in 2.12s]
+[0m17:35:22.992182 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_date
+[0m17:35:22.993275 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_product
+[0m17:35:22.993275 [info ] [Thread-1 (]: 3 of 6 START sql view model default.bronze_product ............................. [RUN]
+[0m17:35:22.995191 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_product) - Creating connection
+[0m17:35:22.995191 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_product'
+[0m17:35:22.996295 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_product
+[0m17:35:23.002279 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_product"
+[0m17:35:23.005898 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_product
+[0m17:35:23.010896 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:35:23.013419 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_product`
+[0m17:35:23.014417 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_product"
+[0m17:35:23.016419 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_product"
+[0m17:35:23.017418 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_product: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_product"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_product`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_product`
+  )
+
+[0m17:35:23.018443 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:35:23.738339 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b677-9955-1699-887a-a08d5b45b776) - Created
+[0m17:35:24.725208 [debug] [Thread-1 (]: SQL status: OK in 1.710 seconds
+[0m17:35:24.727305 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b677-9955-1699-887a-a08d5b45b776, command-id=01f0b677-996d-11c4-8d60-87a5a063ae7c) - Closing
+[0m17:35:24.731032 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:35:24.732647 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_product: Close
+[0m17:35:24.733259 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b677-9955-1699-887a-a08d5b45b776) - Closing
+[0m17:35:24.929720 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fd6481fd-5708-46d2-9ae1-1fcd3d44a11a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE79F7F620>]}
+[0m17:35:24.930586 [info ] [Thread-1 (]: 3 of 6 OK created sql view model default.bronze_product ........................ [[32mOK[0m in 1.94s]
+[0m17:35:24.932117 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_product
+[0m17:35:24.933145 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_returns
+[0m17:35:24.933145 [info ] [Thread-1 (]: 4 of 6 START sql view model default.bronze_returns ............................. [RUN]
+[0m17:35:24.935171 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_returns) - Creating connection
+[0m17:35:24.937276 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_returns'
+[0m17:35:24.939268 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_returns
+[0m17:35:24.946969 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_returns"
+[0m17:35:24.948936 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_returns
+[0m17:35:24.953226 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:35:24.954279 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_returns`
+[0m17:35:24.955217 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_returns"
+[0m17:35:24.956295 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_returns"
+[0m17:35:24.957221 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_returns: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_returns"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_returns`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`fact_returns`
+  )
+
+[0m17:35:24.958239 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:35:25.651926 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b677-9a76-1645-b12d-01e9e81072f3) - Created
+[0m17:35:26.567802 [debug] [Thread-1 (]: SQL status: OK in 1.610 seconds
+[0m17:35:26.569340 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b677-9a76-1645-b12d-01e9e81072f3, command-id=01f0b677-9a90-1b4d-a741-780e0581e3a0) - Closing
+[0m17:35:26.570333 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:35:26.571838 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_returns: Close
+[0m17:35:26.572859 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b677-9a76-1645-b12d-01e9e81072f3) - Closing
+[0m17:35:26.779390 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fd6481fd-5708-46d2-9ae1-1fcd3d44a11a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE7B043FB0>]}
+[0m17:35:26.780390 [info ] [Thread-1 (]: 4 of 6 OK created sql view model default.bronze_returns ........................ [[32mOK[0m in 1.85s]
+[0m17:35:26.780390 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_returns
+[0m17:35:26.781894 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_sales
+[0m17:35:26.781894 [info ] [Thread-1 (]: 5 of 6 START sql view model default.bronze_sales ............................... [RUN]
+[0m17:35:26.782897 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_sales) - Creating connection
+[0m17:35:26.782897 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_sales'
+[0m17:35:26.783898 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_sales
+[0m17:35:26.789901 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_sales"
+[0m17:35:26.790901 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_sales
+[0m17:35:26.794411 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:35:26.795411 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_sales`
+[0m17:35:26.796411 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_sales"
+[0m17:35:26.797411 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_sales"
+[0m17:35:26.798411 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_sales: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_sales"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_sales`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`fact_sales`
+  )
+
+[0m17:35:26.798411 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:35:27.493178 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b677-9b90-1cb5-9e39-9b8ed8ec0ef6) - Created
+[0m17:35:28.456321 [debug] [Thread-1 (]: SQL status: OK in 1.660 seconds
+[0m17:35:28.460321 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b677-9b90-1cb5-9e39-9b8ed8ec0ef6, command-id=01f0b677-9bac-1cab-9ab3-c9c368c5977b) - Closing
+[0m17:35:28.460321 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:35:28.462845 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_sales: Close
+[0m17:35:28.462845 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b677-9b90-1cb5-9e39-9b8ed8ec0ef6) - Closing
+[0m17:35:28.717309 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fd6481fd-5708-46d2-9ae1-1fcd3d44a11a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE7B02F4A0>]}
+[0m17:35:28.718309 [info ] [Thread-1 (]: 5 of 6 OK created sql view model default.bronze_sales .......................... [[32mOK[0m in 1.93s]
+[0m17:35:28.719308 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_sales
+[0m17:35:28.720369 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_store
+[0m17:35:28.720369 [info ] [Thread-1 (]: 6 of 6 START sql view model default.bronze_store ............................... [RUN]
+[0m17:35:28.720369 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_store) - Creating connection
+[0m17:35:28.722215 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_store'
+[0m17:35:28.722215 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_store
+[0m17:35:28.727014 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_store"
+[0m17:35:28.728909 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_store
+[0m17:35:28.733094 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:35:28.735162 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_store`
+[0m17:35:28.737095 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_store"
+[0m17:35:28.739141 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_store"
+[0m17:35:28.740095 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_store: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_store"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_store`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_store`
+  )
+
+[0m17:35:28.740095 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:35:29.642108 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b677-9cd6-123f-a503-f98d7ba64c89) - Created
+[0m17:35:30.772962 [debug] [Thread-1 (]: SQL status: OK in 2.030 seconds
+[0m17:35:30.775054 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b677-9cd6-123f-a503-f98d7ba64c89, command-id=01f0b677-9cf6-1615-930d-1fd1256c0750) - Closing
+[0m17:35:30.776072 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:35:30.781042 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_store: Close
+[0m17:35:30.782978 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b677-9cd6-123f-a503-f98d7ba64c89) - Closing
+[0m17:35:30.985824 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fd6481fd-5708-46d2-9ae1-1fcd3d44a11a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE79F5E3C0>]}
+[0m17:35:30.988802 [info ] [Thread-1 (]: 6 of 6 OK created sql view model default.bronze_store .......................... [[32mOK[0m in 2.26s]
+[0m17:35:30.990797 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_store
+[0m17:35:30.992788 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:35:30.993893 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:35:30.993893 [info ] [MainThread]: 
+[0m17:35:30.995791 [info ] [MainThread]: Finished running 6 view models in 0 hours 0 minutes and 52.30 seconds (52.30s).
+[0m17:35:30.997789 [debug] [MainThread]: Command end result
+[0m17:35:31.029098 [debug] [MainThread]: Wrote artifact WritableManifest to C:\DBT\jayana_dbt_tutorial\target\manifest.json
+[0m17:35:31.032100 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\DBT\jayana_dbt_tutorial\target\semantic_manifest.json
+[0m17:35:31.038104 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\DBT\jayana_dbt_tutorial\target\run_results.json
+[0m17:35:31.038104 [info ] [MainThread]: 
+[0m17:35:31.039104 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:35:31.040105 [info ] [MainThread]: 
+[0m17:35:31.041105 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=6
+[0m17:35:31.042106 [debug] [MainThread]: Command `dbt run` succeeded at 17:35:31.042106 after 64.41 seconds
+[0m17:35:31.043106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE55F617C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE78877F80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE52DFDA30>]}
+[0m17:35:31.043106 [debug] [MainThread]: Flushing usage events
+[0m17:35:32.338701 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:38:46.377665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F36F24B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F12B5DC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F12B5EE0>]}
+
+
+============================== 17:38:46.387356 | 6991ab29-9392-4c8f-ab32-145f88d966b1 ==============================
+[0m17:38:46.387356 [info ] [MainThread]: Running with dbt=1.10.13
+[0m17:38:46.388295 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\DBT\\jayana_dbt_tutorial', 'target_path': 'None', 'warn_error': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'log_path': 'C:\\DBT\\jayana_dbt_tutorial\\logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt run', 'printer_width': '80', 'write_json': 'True'}
+[0m17:38:47.310439 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m17:38:47.311840 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m17:38:47.312443 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m17:38:48.116536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6991ab29-9392-4c8f-ab32-145f88d966b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3FF28D1C0>]}
+[0m17:38:48.181301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6991ab29-9392-4c8f-ab32-145f88d966b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F4F33E90>]}
+[0m17:38:48.182321 [info ] [MainThread]: Registered adapter: databricks=1.10.14
+[0m17:38:48.639418 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m17:38:48.812892 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:38:48.813907 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:38:48.823405 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.jayana_dbt_tutorial.bronze
+[0m17:38:48.851066 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6991ab29-9392-4c8f-ab32-145f88d966b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3FF8856A0>]}
+[0m17:38:48.921509 [debug] [MainThread]: Wrote artifact WritableManifest to C:\DBT\jayana_dbt_tutorial\target\manifest.json
+[0m17:38:48.924392 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\DBT\jayana_dbt_tutorial\target\semantic_manifest.json
+[0m17:38:48.936593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6991ab29-9392-4c8f-ab32-145f88d966b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3FFC56600>]}
+[0m17:38:48.936593 [info ] [MainThread]: Found 6 models, 6 sources, 699 macros
+[0m17:38:48.937598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6991ab29-9392-4c8f-ab32-145f88d966b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F4C24E60>]}
+[0m17:38:48.939693 [info ] [MainThread]: 
+[0m17:38:48.940593 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:38:48.941350 [info ] [MainThread]: 
+[0m17:38:48.941934 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:38:48.942463 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:38:48.948492 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_dbt_tutorial) - Creating connection
+[0m17:38:48.949478 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt_tutorial'
+[0m17:38:48.961115 [debug] [ThreadPool]: Using databricks connection "list_dbt_tutorial"
+[0m17:38:48.961115 [debug] [ThreadPool]: On list_dbt_tutorial: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "connection_name": "list_dbt_tutorial"} */
+
+    show databases
+  
+[0m17:38:48.962116 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:38:55.675979 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b678-17a1-130b-b4b3-5b4830d2f99e) - Created
+[0m17:38:56.088910 [debug] [ThreadPool]: SQL status: OK in 7.130 seconds
+[0m17:38:56.114578 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f0b678-17a1-130b-b4b3-5b4830d2f99e, command-id=01f0b678-17c0-1cd8-affb-4c665411f460) - Closing
+[0m17:38:56.115579 [debug] [ThreadPool]: On list_dbt_tutorial: Close
+[0m17:38:56.117606 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b678-17a1-130b-b4b3-5b4830d2f99e) - Closing
+[0m17:38:56.295191 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_dbt_tutorial_default) - Creating connection
+[0m17:38:56.297209 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt_tutorial_default'
+[0m17:38:56.318888 [debug] [ThreadPool]: Using databricks connection "list_dbt_tutorial_default"
+[0m17:38:56.319889 [debug] [ThreadPool]: On list_dbt_tutorial_default: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "connection_name": "list_dbt_tutorial_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'dbt_tutorial' 
+  AND table_schema = 'default'
+
+  
+[0m17:38:56.319889 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:38:57.003975 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b678-1871-1c20-9b30-b7bdf5ea719b) - Created
+[0m17:38:57.684119 [debug] [ThreadPool]: SQL status: OK in 1.360 seconds
+[0m17:38:57.693036 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f0b678-1871-1c20-9b30-b7bdf5ea719b, command-id=01f0b678-188b-11ad-8fce-32bffa27dc28) - Closing
+[0m17:38:57.695030 [debug] [ThreadPool]: On list_dbt_tutorial_default: Close
+[0m17:38:57.696033 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b678-1871-1c20-9b30-b7bdf5ea719b) - Closing
+[0m17:38:57.932698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6991ab29-9392-4c8f-ab32-145f88d966b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F180E090>]}
+[0m17:38:57.950226 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_customer
+[0m17:38:57.951607 [info ] [Thread-1 (]: 1 of 6 START sql view model default.bronze_customer ............................ [RUN]
+[0m17:38:57.954711 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_customer) - Creating connection
+[0m17:38:57.955610 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_customer'
+[0m17:38:57.955610 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_customer
+[0m17:38:57.966979 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_customer"
+[0m17:38:57.968937 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_customer
+[0m17:38:57.986440 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:38:57.989438 [warn ] [Thread-1 (]: [[33mWARNING[0m]: Use revamped materializations based on separating create and insert.  This allows more performant column comments, as well as new column features.
+You may opt into the new behavior sooner by setting `flags.use_materialization_v2` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m17:38:57.990525 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '6991ab29-9392-4c8f-ab32-145f88d966b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3FFDEE1E0>]}
+[0m17:38:58.005433 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_customer`
+[0m17:38:58.014945 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_customer"
+[0m17:38:58.015946 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_customer"
+[0m17:38:58.015946 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_customer: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_customer"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_customer`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_customer`
+  )
+
+[0m17:38:58.016946 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:38:58.748844 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-1975-1bd8-a7a4-c4d34e473deb) - Created
+[0m17:38:59.663616 [debug] [Thread-1 (]: SQL status: OK in 1.650 seconds
+[0m17:38:59.665612 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b678-1975-1bd8-a7a4-c4d34e473deb, command-id=01f0b678-1995-1379-aefb-723953691560) - Closing
+[0m17:38:59.687610 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:38:59.690610 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_customer: Close
+[0m17:38:59.690610 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-1975-1bd8-a7a4-c4d34e473deb) - Closing
+[0m17:38:59.897169 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6991ab29-9392-4c8f-ab32-145f88d966b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F1B051F0>]}
+[0m17:38:59.902141 [info ] [Thread-1 (]: 1 of 6 OK created sql view model default.bronze_customer ....................... [[32mOK[0m in 1.93s]
+[0m17:38:59.906179 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_customer
+[0m17:38:59.908131 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_date
+[0m17:38:59.911147 [info ] [Thread-1 (]: 2 of 6 START sql view model default.bronze_date ................................ [RUN]
+[0m17:38:59.912623 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_date) - Creating connection
+[0m17:38:59.912623 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_date'
+[0m17:38:59.912623 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_date
+[0m17:38:59.918623 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_date"
+[0m17:38:59.919622 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_date
+[0m17:38:59.922659 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:38:59.925238 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_date`
+[0m17:38:59.925238 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_date"
+[0m17:38:59.926239 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_date"
+[0m17:38:59.927239 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_date: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_date"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_date`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_date`
+  )
+
+[0m17:38:59.929237 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:39:00.585558 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-1a93-10b1-b964-8ff8cf331d0d) - Created
+[0m17:39:01.455352 [debug] [Thread-1 (]: SQL status: OK in 1.530 seconds
+[0m17:39:01.456344 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b678-1a93-10b1-b964-8ff8cf331d0d, command-id=01f0b678-1aae-134c-b4ca-f3d2d8c0b598) - Closing
+[0m17:39:01.457340 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:39:01.458341 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_date: Close
+[0m17:39:01.458341 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-1a93-10b1-b964-8ff8cf331d0d) - Closing
+[0m17:39:01.659953 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6991ab29-9392-4c8f-ab32-145f88d966b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3FFE08110>]}
+[0m17:39:01.661167 [info ] [Thread-1 (]: 2 of 6 OK created sql view model default.bronze_date ........................... [[32mOK[0m in 1.75s]
+[0m17:39:01.662165 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_date
+[0m17:39:01.662165 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_product
+[0m17:39:01.663330 [info ] [Thread-1 (]: 3 of 6 START sql view model default.bronze_product ............................. [RUN]
+[0m17:39:01.664338 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_product) - Creating connection
+[0m17:39:01.665338 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_product'
+[0m17:39:01.665338 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_product
+[0m17:39:01.669338 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_product"
+[0m17:39:01.670338 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_product
+[0m17:39:01.672336 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:39:01.673338 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_product`
+[0m17:39:01.674344 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_product"
+[0m17:39:01.675337 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_product"
+[0m17:39:01.676338 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_product: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_product"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_product`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_product`
+  )
+
+[0m17:39:01.676338 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:39:13.286687 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-2226-19cb-b030-cb34de173781) - Created
+[0m17:39:14.162731 [debug] [Thread-1 (]: SQL status: OK in 12.490 seconds
+[0m17:39:14.169361 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b678-2226-19cb-b030-cb34de173781, command-id=01f0b678-223f-1b6d-a69b-ae6fd4c28c1a) - Closing
+[0m17:39:14.173362 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:39:14.177343 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_product: Close
+[0m17:39:14.178339 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-2226-19cb-b030-cb34de173781) - Closing
+[0m17:39:14.408447 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6991ab29-9392-4c8f-ab32-145f88d966b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3FFED2B70>]}
+[0m17:39:14.409450 [info ] [Thread-1 (]: 3 of 6 OK created sql view model default.bronze_product ........................ [[32mOK[0m in 12.75s]
+[0m17:39:14.411463 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_product
+[0m17:39:14.412452 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_returns
+[0m17:39:14.414452 [info ] [Thread-1 (]: 4 of 6 START sql view model default.bronze_returns ............................. [RUN]
+[0m17:39:14.415932 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_returns) - Creating connection
+[0m17:39:14.417020 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_returns'
+[0m17:39:14.419041 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_returns
+[0m17:39:14.423033 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_returns"
+[0m17:39:14.425447 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_returns
+[0m17:39:14.433562 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:39:14.440102 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_returns`
+[0m17:39:14.441132 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_returns"
+[0m17:39:14.443122 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_returns"
+[0m17:39:14.445687 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_returns: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_returns"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_returns`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`fact_returns`
+  )
+
+[0m17:39:14.447688 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:39:15.232664 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-234e-10a0-876d-492e9af6988e) - Created
+[0m17:39:16.151879 [debug] [Thread-1 (]: SQL status: OK in 1.710 seconds
+[0m17:39:16.156584 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b678-234e-10a0-876d-492e9af6988e, command-id=01f0b678-2369-1a48-83e4-b576c2b24e34) - Closing
+[0m17:39:16.160054 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:39:16.163341 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_returns: Close
+[0m17:39:16.164335 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-234e-10a0-876d-492e9af6988e) - Closing
+[0m17:39:16.354131 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6991ab29-9392-4c8f-ab32-145f88d966b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3FFEF01A0>]}
+[0m17:39:16.356035 [info ] [Thread-1 (]: 4 of 6 OK created sql view model default.bronze_returns ........................ [[32mOK[0m in 1.94s]
+[0m17:39:16.358090 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_returns
+[0m17:39:16.359128 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_sales
+[0m17:39:16.360028 [info ] [Thread-1 (]: 5 of 6 START sql view model default.bronze_sales ............................... [RUN]
+[0m17:39:16.361028 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_sales) - Creating connection
+[0m17:39:16.362026 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_sales'
+[0m17:39:16.362026 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_sales
+[0m17:39:16.375501 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_sales"
+[0m17:39:16.377442 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_sales
+[0m17:39:16.382386 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:39:16.384844 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_sales`
+[0m17:39:16.385941 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_sales"
+[0m17:39:16.389472 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_sales"
+[0m17:39:16.390576 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_sales: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_sales"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_sales`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`fact_sales`
+  )
+
+[0m17:39:16.392612 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:39:17.072626 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-2468-15ba-b473-7b61efc30b4e) - Created
+[0m17:39:17.795989 [debug] [Thread-1 (]: SQL status: OK in 1.400 seconds
+[0m17:39:17.802261 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b678-2468-15ba-b473-7b61efc30b4e, command-id=01f0b678-2480-1f9f-908a-6ff6ca0dd129) - Closing
+[0m17:39:17.806470 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:39:17.810940 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_sales: Close
+[0m17:39:17.812299 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-2468-15ba-b473-7b61efc30b4e) - Closing
+[0m17:39:17.996844 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6991ab29-9392-4c8f-ab32-145f88d966b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3FFEF3290>]}
+[0m17:39:18.003151 [info ] [Thread-1 (]: 5 of 6 OK created sql view model default.bronze_sales .......................... [[32mOK[0m in 1.64s]
+[0m17:39:18.009964 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_sales
+[0m17:39:18.013836 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_store
+[0m17:39:18.017363 [info ] [Thread-1 (]: 6 of 6 START sql view model default.bronze_store ............................... [RUN]
+[0m17:39:18.021976 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_store) - Creating connection
+[0m17:39:18.022979 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_store'
+[0m17:39:18.025544 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_store
+[0m17:39:18.038033 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_store"
+[0m17:39:18.040450 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_store
+[0m17:39:18.048774 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:39:18.050774 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_store`
+[0m17:39:18.051755 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_store"
+[0m17:39:18.052760 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_store"
+[0m17:39:18.053677 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_store: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_store"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_store`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_store`
+  )
+
+[0m17:39:18.054785 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:39:18.716815 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-2561-177a-b870-b19d06cfe5b4) - Created
+[0m17:39:19.532758 [debug] [Thread-1 (]: SQL status: OK in 1.480 seconds
+[0m17:39:19.533729 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b678-2561-177a-b870-b19d06cfe5b4, command-id=01f0b678-257d-1a2b-bf4a-061bdac274dd) - Closing
+[0m17:39:19.534732 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:39:19.536082 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_store: Close
+[0m17:39:19.536082 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-2561-177a-b870-b19d06cfe5b4) - Closing
+[0m17:39:19.736564 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6991ab29-9392-4c8f-ab32-145f88d966b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3FFE3E0F0>]}
+[0m17:39:19.739695 [info ] [Thread-1 (]: 6 of 6 OK created sql view model default.bronze_store .......................... [[32mOK[0m in 1.72s]
+[0m17:39:19.747150 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_store
+[0m17:39:19.756359 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:39:19.757355 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:39:19.759370 [info ] [MainThread]: 
+[0m17:39:19.762363 [info ] [MainThread]: Finished running 6 view models in 0 hours 0 minutes and 30.82 seconds (30.82s).
+[0m17:39:19.774965 [debug] [MainThread]: Command end result
+[0m17:39:19.842881 [debug] [MainThread]: Wrote artifact WritableManifest to C:\DBT\jayana_dbt_tutorial\target\manifest.json
+[0m17:39:19.846151 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\DBT\jayana_dbt_tutorial\target\semantic_manifest.json
+[0m17:39:19.854690 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\DBT\jayana_dbt_tutorial\target\run_results.json
+[0m17:39:19.855704 [info ] [MainThread]: 
+[0m17:39:19.856704 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:39:19.857703 [info ] [MainThread]: 
+[0m17:39:19.858703 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=6
+[0m17:39:19.859704 [debug] [MainThread]: Command `dbt run` succeeded at 17:39:19.859704 after 33.76 seconds
+[0m17:39:19.859704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3EE654B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F1F8DE80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3F1F8E4B0>]}
+[0m17:39:19.860719 [debug] [MainThread]: Flushing usage events
+[0m17:39:20.894214 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:40:44.439702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000112944E09B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001129459B440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001129459B2C0>]}
+
+
+============================== 17:40:44.465286 | fa62b54d-81c9-4e86-be85-07b38ec31f02 ==============================
+[0m17:40:44.465286 [info ] [MainThread]: Running with dbt=1.10.13
+[0m17:40:44.468167 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\DBT\\jayana_dbt_tutorial', 'invocation_command': 'dbt run', 'no_print': 'None', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'C:\\DBT\\jayana_dbt_tutorial\\logs', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'use_colors': 'True', 'printer_width': '80', 'write_json': 'True'}
+[0m17:40:45.390857 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m17:40:45.391856 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m17:40:45.391856 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m17:40:46.181555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fa62b54d-81c9-4e86-be85-07b38ec31f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000112B939DCD0>]}
+[0m17:40:46.242390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fa62b54d-81c9-4e86-be85-07b38ec31f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000112B724FA70>]}
+[0m17:40:46.243378 [info ] [MainThread]: Registered adapter: databricks=1.10.14
+[0m17:40:46.720230 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m17:40:46.890847 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:40:46.890847 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:40:46.898848 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.jayana_dbt_tutorial.bronze
+[0m17:40:46.925081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fa62b54d-81c9-4e86-be85-07b38ec31f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000112B7D270E0>]}
+[0m17:40:46.993252 [debug] [MainThread]: Wrote artifact WritableManifest to C:\DBT\jayana_dbt_tutorial\target\manifest.json
+[0m17:40:46.996252 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\DBT\jayana_dbt_tutorial\target\semantic_manifest.json
+[0m17:40:47.010172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fa62b54d-81c9-4e86-be85-07b38ec31f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000112B97D14C0>]}
+[0m17:40:47.010172 [info ] [MainThread]: Found 6 models, 6 sources, 699 macros
+[0m17:40:47.011264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fa62b54d-81c9-4e86-be85-07b38ec31f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011290E45970>]}
+[0m17:40:47.013270 [info ] [MainThread]: 
+[0m17:40:47.014265 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:40:47.014265 [info ] [MainThread]: 
+[0m17:40:47.015264 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:40:47.016299 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:40:47.023287 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_dbt_tutorial) - Creating connection
+[0m17:40:47.023287 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt_tutorial'
+[0m17:40:47.033383 [debug] [ThreadPool]: Using databricks connection "list_dbt_tutorial"
+[0m17:40:47.034289 [debug] [ThreadPool]: On list_dbt_tutorial: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "connection_name": "list_dbt_tutorial"} */
+
+    show databases
+  
+[0m17:40:47.034289 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:40:47.902579 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b678-5a88-10bf-88ad-477d0b0833c5) - Created
+[0m17:40:48.518266 [debug] [ThreadPool]: SQL status: OK in 1.480 seconds
+[0m17:40:48.527256 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f0b678-5a88-10bf-88ad-477d0b0833c5, command-id=01f0b678-5aa9-1b0e-9099-9516e827cb7c) - Closing
+[0m17:40:48.528254 [debug] [ThreadPool]: On list_dbt_tutorial: Close
+[0m17:40:48.528254 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b678-5a88-10bf-88ad-477d0b0833c5) - Closing
+[0m17:40:48.719888 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_dbt_tutorial_default) - Creating connection
+[0m17:40:48.720875 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt_tutorial_default'
+[0m17:40:48.731101 [debug] [ThreadPool]: Using databricks connection "list_dbt_tutorial_default"
+[0m17:40:48.732100 [debug] [ThreadPool]: On list_dbt_tutorial_default: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "connection_name": "list_dbt_tutorial_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'dbt_tutorial' 
+  AND table_schema = 'default'
+
+  
+[0m17:40:48.732100 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:40:49.435361 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b678-5b74-117c-891f-5011a241f294) - Created
+[0m17:40:49.982193 [debug] [ThreadPool]: SQL status: OK in 1.250 seconds
+[0m17:40:49.985193 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f0b678-5b74-117c-891f-5011a241f294, command-id=01f0b678-5b90-192b-a780-726bb8244622) - Closing
+[0m17:40:49.985193 [debug] [ThreadPool]: On list_dbt_tutorial_default: Close
+[0m17:40:49.986194 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b678-5b74-117c-891f-5011a241f294) - Closing
+[0m17:40:50.573412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fa62b54d-81c9-4e86-be85-07b38ec31f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011294B85FD0>]}
+[0m17:40:50.589284 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_customer
+[0m17:40:50.591305 [info ] [Thread-1 (]: 1 of 6 START sql view model default.bronze_customer ............................ [RUN]
+[0m17:40:50.593307 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_customer) - Creating connection
+[0m17:40:50.595428 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_customer'
+[0m17:40:50.596403 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_customer
+[0m17:40:50.615675 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_customer"
+[0m17:40:50.617679 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_customer
+[0m17:40:50.633875 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:40:50.636037 [warn ] [Thread-1 (]: [[33mWARNING[0m]: Use revamped materializations based on separating create and insert.  This allows more performant column comments, as well as new column features.
+You may opt into the new behavior sooner by setting `flags.use_materialization_v2` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m17:40:50.638037 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': 'fa62b54d-81c9-4e86-be85-07b38ec31f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000112B9970320>]}
+[0m17:40:50.652237 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_customer`
+[0m17:40:50.662311 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_customer"
+[0m17:40:50.663326 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_customer"
+[0m17:40:50.664226 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_customer: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_customer"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_customer`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_customer`
+  )
+
+[0m17:40:50.664226 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:40:51.387897 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-5c9a-112f-81d0-81bc43cd1b8c) - Created
+[0m17:40:52.148085 [debug] [Thread-1 (]: SQL status: OK in 1.480 seconds
+[0m17:40:52.153077 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b678-5c9a-112f-81d0-81bc43cd1b8c, command-id=01f0b678-5cbc-1cc9-b8c1-003cd55d336e) - Closing
+[0m17:40:52.169618 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:40:52.172690 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_customer: Close
+[0m17:40:52.173727 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-5c9a-112f-81d0-81bc43cd1b8c) - Closing
+[0m17:40:52.410091 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa62b54d-81c9-4e86-be85-07b38ec31f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011294500170>]}
+[0m17:40:52.412021 [info ] [Thread-1 (]: 1 of 6 OK created sql view model default.bronze_customer ....................... [[32mOK[0m in 1.81s]
+[0m17:40:52.413860 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_customer
+[0m17:40:52.414860 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_date
+[0m17:40:52.415857 [info ] [Thread-1 (]: 2 of 6 START sql view model default.bronze_date ................................ [RUN]
+[0m17:40:52.416856 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_date) - Creating connection
+[0m17:40:52.417889 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_date'
+[0m17:40:52.417889 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_date
+[0m17:40:52.423991 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_date"
+[0m17:40:52.424991 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_date
+[0m17:40:52.427324 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:40:52.428420 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_date`
+[0m17:40:52.429417 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_date"
+[0m17:40:52.431325 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_date"
+[0m17:40:52.431325 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_date: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_date"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_date`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_date`
+  )
+
+[0m17:40:52.432326 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:40:53.131880 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-5da6-127f-95a7-9e6d3f208c5e) - Created
+[0m17:40:53.849368 [debug] [Thread-1 (]: SQL status: OK in 1.420 seconds
+[0m17:40:53.851417 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b678-5da6-127f-95a7-9e6d3f208c5e, command-id=01f0b678-5dc2-1a63-ade6-79ce44d370ff) - Closing
+[0m17:40:53.852394 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:40:53.853419 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_date: Close
+[0m17:40:53.854415 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-5da6-127f-95a7-9e6d3f208c5e) - Closing
+[0m17:40:54.049537 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa62b54d-81c9-4e86-be85-07b38ec31f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000112B9946E10>]}
+[0m17:40:54.051505 [info ] [Thread-1 (]: 2 of 6 OK created sql view model default.bronze_date ........................... [[32mOK[0m in 1.63s]
+[0m17:40:54.052495 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_date
+[0m17:40:54.053593 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_product
+[0m17:40:54.053593 [info ] [Thread-1 (]: 3 of 6 START sql view model default.bronze_product ............................. [RUN]
+[0m17:40:54.054499 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_product) - Creating connection
+[0m17:40:54.055509 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_product'
+[0m17:40:54.055509 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_product
+[0m17:40:54.063588 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_product"
+[0m17:40:54.065613 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_product
+[0m17:40:54.068608 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:40:54.069608 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_product`
+[0m17:40:54.070607 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_product"
+[0m17:40:54.071607 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_product"
+[0m17:40:54.072613 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_product: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_product"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_product`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_product`
+  )
+
+[0m17:40:54.072613 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:40:54.761601 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-5ea4-1b1d-958c-3fa3d1099c6b) - Created
+[0m17:40:55.498776 [debug] [Thread-1 (]: SQL status: OK in 1.430 seconds
+[0m17:40:55.500765 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b678-5ea4-1b1d-958c-3fa3d1099c6b, command-id=01f0b678-5ec0-1201-9608-768cde45551b) - Closing
+[0m17:40:55.501762 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:40:55.501762 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_product: Close
+[0m17:40:55.504810 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-5ea4-1b1d-958c-3fa3d1099c6b) - Closing
+[0m17:40:55.691857 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa62b54d-81c9-4e86-be85-07b38ec31f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000112B99A1DC0>]}
+[0m17:40:55.697221 [info ] [Thread-1 (]: 3 of 6 OK created sql view model default.bronze_product ........................ [[32mOK[0m in 1.64s]
+[0m17:40:55.701565 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_product
+[0m17:40:55.703911 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_returns
+[0m17:40:55.707949 [info ] [Thread-1 (]: 4 of 6 START sql view model default.bronze_returns ............................. [RUN]
+[0m17:40:55.710971 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_returns) - Creating connection
+[0m17:40:55.711969 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_returns'
+[0m17:40:55.711969 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_returns
+[0m17:40:55.717007 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_returns"
+[0m17:40:55.718775 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_returns
+[0m17:40:55.722894 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:40:55.723892 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_returns`
+[0m17:40:55.724894 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_returns"
+[0m17:40:55.725892 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_returns"
+[0m17:40:55.725892 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_returns: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_returns"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_returns`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`fact_returns`
+  )
+
+[0m17:40:55.727158 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:40:56.401948 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-5f9c-11c3-b530-4aed91deb02a) - Created
+[0m17:40:57.331939 [debug] [Thread-1 (]: SQL status: OK in 1.600 seconds
+[0m17:40:57.332969 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b678-5f9c-11c3-b530-4aed91deb02a, command-id=01f0b678-5fb6-1bd5-b7f1-ead3f426c5f2) - Closing
+[0m17:40:57.341510 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:40:57.349204 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_returns: Close
+[0m17:40:57.351238 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-5f9c-11c3-b530-4aed91deb02a) - Closing
+[0m17:40:57.529033 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa62b54d-81c9-4e86-be85-07b38ec31f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000112B9A24890>]}
+[0m17:40:57.531072 [info ] [Thread-1 (]: 4 of 6 OK created sql view model default.bronze_returns ........................ [[32mOK[0m in 1.81s]
+[0m17:40:57.539388 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_returns
+[0m17:40:57.539388 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_sales
+[0m17:40:57.539388 [info ] [Thread-1 (]: 5 of 6 START sql view model default.bronze_sales ............................... [RUN]
+[0m17:40:57.539388 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_sales) - Creating connection
+[0m17:40:57.549086 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_sales'
+[0m17:40:57.551187 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_sales
+[0m17:40:57.567955 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_sales"
+[0m17:40:57.572957 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_sales
+[0m17:40:57.579588 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:40:57.582588 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_sales`
+[0m17:40:57.583680 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_sales"
+[0m17:40:57.584615 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_sales"
+[0m17:40:57.584615 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_sales: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_sales"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_sales`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`fact_sales`
+  )
+
+[0m17:40:57.585587 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:40:58.292451 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-60bf-13f5-9bed-d4223c652865) - Created
+[0m17:40:59.267708 [debug] [Thread-1 (]: SQL status: OK in 1.680 seconds
+[0m17:40:59.267708 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b678-60bf-13f5-9bed-d4223c652865, command-id=01f0b678-60e2-14da-99fe-0882ab1759ac) - Closing
+[0m17:40:59.267708 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:40:59.267708 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_sales: Close
+[0m17:40:59.267708 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-60bf-13f5-9bed-d4223c652865) - Closing
+[0m17:40:59.473943 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa62b54d-81c9-4e86-be85-07b38ec31f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000112B99F0380>]}
+[0m17:40:59.478006 [info ] [Thread-1 (]: 5 of 6 OK created sql view model default.bronze_sales .......................... [[32mOK[0m in 1.93s]
+[0m17:40:59.480037 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_sales
+[0m17:40:59.480037 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_store
+[0m17:40:59.490394 [info ] [Thread-1 (]: 6 of 6 START sql view model default.bronze_store ............................... [RUN]
+[0m17:40:59.498496 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_store) - Creating connection
+[0m17:40:59.501154 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_store'
+[0m17:40:59.503131 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_store
+[0m17:40:59.522110 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_store"
+[0m17:40:59.527136 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_store
+[0m17:40:59.537688 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:40:59.545794 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_store`
+[0m17:40:59.549942 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_store"
+[0m17:40:59.550947 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_store"
+[0m17:40:59.553963 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_store: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_store"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_store`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_store`
+  )
+
+[0m17:40:59.555939 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:41:00.238948 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-61e8-195b-93b6-b698405ed5f4) - Created
+[0m17:41:01.021960 [debug] [Thread-1 (]: SQL status: OK in 1.470 seconds
+[0m17:41:01.029995 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b678-61e8-195b-93b6-b698405ed5f4, command-id=01f0b678-6206-1de7-8bec-e679c8e47974) - Closing
+[0m17:41:01.038826 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:41:01.041852 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_store: Close
+[0m17:41:01.043852 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-61e8-195b-93b6-b698405ed5f4) - Closing
+[0m17:41:01.213091 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa62b54d-81c9-4e86-be85-07b38ec31f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000112B99CBB60>]}
+[0m17:41:01.219184 [info ] [Thread-1 (]: 6 of 6 OK created sql view model default.bronze_store .......................... [[32mOK[0m in 1.72s]
+[0m17:41:01.220705 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_store
+[0m17:41:01.222724 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:41:01.222724 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:41:01.227734 [info ] [MainThread]: 
+[0m17:41:01.227734 [info ] [MainThread]: Finished running 6 view models in 0 hours 0 minutes and 14.21 seconds (14.21s).
+[0m17:41:01.240227 [debug] [MainThread]: Command end result
+[0m17:41:01.270152 [debug] [MainThread]: Wrote artifact WritableManifest to C:\DBT\jayana_dbt_tutorial\target\manifest.json
+[0m17:41:01.274923 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\DBT\jayana_dbt_tutorial\target\semantic_manifest.json
+[0m17:41:01.281339 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\DBT\jayana_dbt_tutorial\target\run_results.json
+[0m17:41:01.282327 [info ] [MainThread]: 
+[0m17:41:01.283325 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:41:01.283325 [info ] [MainThread]: 
+[0m17:41:01.284324 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=6
+[0m17:41:01.285324 [debug] [MainThread]: Command `dbt run` succeeded at 17:41:01.285324 after 17.09 seconds
+[0m17:41:01.285324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011292150EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000112945C9130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000112945C9C40>]}
+[0m17:41:01.286340 [debug] [MainThread]: Flushing usage events
+[0m17:41:02.453986 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:43:18.199885 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002935B50E930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002935B6606B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002935B661340>]}
+
+
+============================== 17:43:18.199885 | a4e1f543-e583-4c28-b4ff-b448f6beddff ==============================
+[0m17:43:18.199885 [info ] [MainThread]: Running with dbt=1.10.13
+[0m17:43:18.199885 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'no_print': 'None', 'printer_width': '80', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'C:\\DBT\\jayana_dbt_tutorial\\logs', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\DBT\\jayana_dbt_tutorial', 'use_colors': 'True', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m17:43:19.083640 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m17:43:19.083640 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m17:43:19.083640 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m17:43:19.877241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a4e1f543-e583-4c28-b4ff-b448f6beddff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002937E86ADB0>]}
+[0m17:43:19.948250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a4e1f543-e583-4c28-b4ff-b448f6beddff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002937DCBF620>]}
+[0m17:43:19.949309 [info ] [MainThread]: Registered adapter: databricks=1.10.14
+[0m17:43:20.397733 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m17:43:20.487074 [error] [MainThread]: Encountered an error:
+Parsing Error
+  The schema file at models\Bronze\properties.yml is invalid because a list element for 'models' does not have a name attribute.
+[0m17:43:20.488307 [debug] [MainThread]: Command `dbt run` failed at 17:43:20.488307 after 2.42 seconds
+[0m17:43:20.489328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002935B3CF0B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002937EB351C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002937EEFBAD0>]}
+[0m17:43:20.489328 [debug] [MainThread]: Flushing usage events
+[0m17:43:21.439231 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:44:07.104672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020066CAAE40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020064154BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020066CAB8F0>]}
+
+
+============================== 17:44:07.122635 | 6a14760f-06d0-480a-8e8c-6d3a84e20eba ==============================
+[0m17:44:07.122635 [info ] [MainThread]: Running with dbt=1.10.13
+[0m17:44:07.124553 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run', 'printer_width': '80', 'log_format': 'default', 'profiles_dir': 'C:\\DBT\\jayana_dbt_tutorial', 'write_json': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'log_path': 'C:\\DBT\\jayana_dbt_tutorial\\logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m17:44:08.001247 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m17:44:08.001247 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m17:44:08.001247 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m17:44:08.784429 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6a14760f-06d0-480a-8e8c-6d3a84e20eba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002008130EE70>]}
+[0m17:44:08.846155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6a14760f-06d0-480a-8e8c-6d3a84e20eba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200686DFFB0>]}
+[0m17:44:08.847155 [info ] [MainThread]: Registered adapter: databricks=1.10.14
+[0m17:44:09.284561 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m17:44:09.494864 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:44:09.495863 [debug] [MainThread]: Partial parsing: updated file: jayana_dbt_tutorial://models\Bronze\properties.yml
+[0m17:44:09.798811 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.jayana_dbt_tutorial.bronze
+[0m17:44:09.812814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6a14760f-06d0-480a-8e8c-6d3a84e20eba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020081B3BB60>]}
+[0m17:44:09.880090 [debug] [MainThread]: Wrote artifact WritableManifest to C:\DBT\jayana_dbt_tutorial\target\manifest.json
+[0m17:44:09.883096 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\DBT\jayana_dbt_tutorial\target\semantic_manifest.json
+[0m17:44:09.896468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6a14760f-06d0-480a-8e8c-6d3a84e20eba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020081BDE8D0>]}
+[0m17:44:09.896468 [info ] [MainThread]: Found 6 models, 6 sources, 699 macros
+[0m17:44:09.897472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6a14760f-06d0-480a-8e8c-6d3a84e20eba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020081AC6330>]}
+[0m17:44:09.899465 [info ] [MainThread]: 
+[0m17:44:09.899465 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:44:09.899465 [info ] [MainThread]: 
+[0m17:44:09.900467 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:44:09.900467 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:44:09.907464 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_dbt_tutorial) - Creating connection
+[0m17:44:09.908468 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt_tutorial'
+[0m17:44:09.918467 [debug] [ThreadPool]: Using databricks connection "list_dbt_tutorial"
+[0m17:44:09.918467 [debug] [ThreadPool]: On list_dbt_tutorial: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "connection_name": "list_dbt_tutorial"} */
+
+    show databases
+  
+[0m17:44:09.918467 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:44:10.660326 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b678-d35f-1f6d-8c89-7113cff231b6) - Created
+[0m17:44:11.066527 [debug] [ThreadPool]: SQL status: OK in 1.150 seconds
+[0m17:44:11.072524 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f0b678-d35f-1f6d-8c89-7113cff231b6, command-id=01f0b678-d380-1248-9b11-c1f918982cac) - Closing
+[0m17:44:11.073522 [debug] [ThreadPool]: On list_dbt_tutorial: Close
+[0m17:44:11.074523 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b678-d35f-1f6d-8c89-7113cff231b6) - Closing
+[0m17:44:11.271780 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_dbt_tutorial_default) - Creating connection
+[0m17:44:11.273767 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt_tutorial_default'
+[0m17:44:11.286045 [debug] [ThreadPool]: Using databricks connection "list_dbt_tutorial_default"
+[0m17:44:11.287044 [debug] [ThreadPool]: On list_dbt_tutorial_default: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "connection_name": "list_dbt_tutorial_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'dbt_tutorial' 
+  AND table_schema = 'default'
+
+  
+[0m17:44:11.287044 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:44:12.092068 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b678-d43c-1250-a3d7-99346854935f) - Created
+[0m17:44:12.840235 [debug] [ThreadPool]: SQL status: OK in 1.550 seconds
+[0m17:44:12.846320 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f0b678-d43c-1250-a3d7-99346854935f, command-id=01f0b678-d45a-145b-aa91-243d6f0393de) - Closing
+[0m17:44:12.848231 [debug] [ThreadPool]: On list_dbt_tutorial_default: Close
+[0m17:44:12.848231 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b678-d43c-1250-a3d7-99346854935f) - Closing
+[0m17:44:13.029292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6a14760f-06d0-480a-8e8c-6d3a84e20eba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200644182F0>]}
+[0m17:44:13.050054 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_customer
+[0m17:44:13.052087 [info ] [Thread-1 (]: 1 of 6 START sql view model default.bronze_customer ............................ [RUN]
+[0m17:44:13.054085 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_customer) - Creating connection
+[0m17:44:13.055167 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_customer'
+[0m17:44:13.055167 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_customer
+[0m17:44:13.066117 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_customer"
+[0m17:44:13.067076 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_customer
+[0m17:44:13.176203 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:44:13.178477 [warn ] [Thread-1 (]: [[33mWARNING[0m]: Use revamped materializations based on separating create and insert.  This allows more performant column comments, as well as new column features.
+You may opt into the new behavior sooner by setting `flags.use_materialization_v2` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m17:44:13.179476 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '6a14760f-06d0-480a-8e8c-6d3a84e20eba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020069A42CF0>]}
+[0m17:44:13.193724 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_customer`
+[0m17:44:13.206017 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_customer"
+[0m17:44:13.207018 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_customer"
+[0m17:44:13.207018 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_customer: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_customer"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_customer`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_customer`
+  )
+
+[0m17:44:13.208027 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:44:13.827454 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-d549-1c72-9f3a-c6d3a5c2d65b) - Created
+[0m17:44:14.753044 [debug] [Thread-1 (]: SQL status: OK in 1.540 seconds
+[0m17:44:14.755070 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b678-d549-1c72-9f3a-c6d3a5c2d65b, command-id=01f0b678-d562-1ddb-919a-1eefd7f4fb01) - Closing
+[0m17:44:14.796167 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:44:14.800169 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_customer: Close
+[0m17:44:14.801077 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-d549-1c72-9f3a-c6d3a5c2d65b) - Closing
+[0m17:44:15.065552 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a14760f-06d0-480a-8e8c-6d3a84e20eba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020066608140>]}
+[0m17:44:15.070545 [info ] [Thread-1 (]: 1 of 6 OK created sql view model default.bronze_customer ....................... [[32mOK[0m in 2.00s]
+[0m17:44:15.075516 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_customer
+[0m17:44:15.077289 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_date
+[0m17:44:15.080348 [info ] [Thread-1 (]: 2 of 6 START sql view model default.bronze_date ................................ [RUN]
+[0m17:44:15.085885 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_date) - Creating connection
+[0m17:44:15.087409 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_date'
+[0m17:44:15.089401 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_date
+[0m17:44:15.095392 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_date"
+[0m17:44:15.097416 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_date
+[0m17:44:15.104424 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:44:15.106392 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_date`
+[0m17:44:15.107384 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_date"
+[0m17:44:15.108380 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_date"
+[0m17:44:15.108380 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_date: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_date"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_date`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_date`
+  )
+
+[0m17:44:15.108380 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:44:15.772645 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-d671-1455-847a-591eab9e9f5c) - Created
+[0m17:44:16.606939 [debug] [Thread-1 (]: SQL status: OK in 1.500 seconds
+[0m17:44:16.607939 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b678-d671-1455-847a-591eab9e9f5c, command-id=01f0b678-d68c-185b-aeea-f90947222792) - Closing
+[0m17:44:16.608939 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:44:16.609938 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_date: Close
+[0m17:44:16.609938 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-d671-1455-847a-591eab9e9f5c) - Closing
+[0m17:44:17.000745 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a14760f-06d0-480a-8e8c-6d3a84e20eba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200644AC500>]}
+[0m17:44:17.001969 [info ] [Thread-1 (]: 2 of 6 OK created sql view model default.bronze_date ........................... [[32mOK[0m in 1.92s]
+[0m17:44:17.002869 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_date
+[0m17:44:17.003963 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_product
+[0m17:44:17.003963 [info ] [Thread-1 (]: 3 of 6 START sql view model default.bronze_product ............................. [RUN]
+[0m17:44:17.004940 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_product) - Creating connection
+[0m17:44:17.004940 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_product'
+[0m17:44:17.005874 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_product
+[0m17:44:17.008866 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_product"
+[0m17:44:17.009868 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_product
+[0m17:44:17.013241 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:44:17.014240 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_product`
+[0m17:44:17.015239 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_product"
+[0m17:44:17.015239 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_product"
+[0m17:44:17.016239 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_product: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_product"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_product`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_product`
+  )
+
+[0m17:44:17.016239 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:44:20.797734 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-d96b-1f4e-8276-060d87aee0b4) - Created
+[0m17:44:21.630792 [debug] [Thread-1 (]: SQL status: OK in 4.610 seconds
+[0m17:44:21.632814 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b678-d96b-1f4e-8276-060d87aee0b4, command-id=01f0b678-d98a-1844-9c81-584cc2194254) - Closing
+[0m17:44:21.633773 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:44:21.634790 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_product: Close
+[0m17:44:21.634790 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-d96b-1f4e-8276-060d87aee0b4) - Closing
+[0m17:44:21.818311 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a14760f-06d0-480a-8e8c-6d3a84e20eba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200818D7E00>]}
+[0m17:44:21.820294 [info ] [Thread-1 (]: 3 of 6 OK created sql view model default.bronze_product ........................ [[32mOK[0m in 4.81s]
+[0m17:44:21.821315 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_product
+[0m17:44:21.824046 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_returns
+[0m17:44:21.826040 [info ] [Thread-1 (]: 4 of 6 START sql view model default.bronze_returns ............................. [RUN]
+[0m17:44:21.830023 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_returns) - Creating connection
+[0m17:44:21.830950 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_returns'
+[0m17:44:21.832025 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_returns
+[0m17:44:21.838923 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_returns"
+[0m17:44:21.840923 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_returns
+[0m17:44:21.843925 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:44:21.845971 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_returns`
+[0m17:44:21.848037 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_returns"
+[0m17:44:21.849021 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_returns"
+[0m17:44:21.849922 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_returns: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_returns"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_returns`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`fact_returns`
+  )
+
+[0m17:44:21.849922 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:44:22.683795 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-da92-176b-8337-50c22003881a) - Created
+[0m17:44:23.585903 [debug] [Thread-1 (]: SQL status: OK in 1.730 seconds
+[0m17:44:23.591901 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b678-da92-176b-8337-50c22003881a, command-id=01f0b678-dab1-18f8-b9a1-585bd9a87976) - Closing
+[0m17:44:23.595900 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:44:23.599900 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_returns: Close
+[0m17:44:23.601987 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-da92-176b-8337-50c22003881a) - Closing
+[0m17:44:23.771306 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a14760f-06d0-480a-8e8c-6d3a84e20eba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200813A1BB0>]}
+[0m17:44:23.774318 [info ] [Thread-1 (]: 4 of 6 OK created sql view model default.bronze_returns ........................ [[32mOK[0m in 1.94s]
+[0m17:44:23.779783 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_returns
+[0m17:44:23.782784 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_sales
+[0m17:44:23.785569 [info ] [Thread-1 (]: 5 of 6 START sql view model default.bronze_sales ............................... [RUN]
+[0m17:44:23.790606 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_sales) - Creating connection
+[0m17:44:23.791597 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_sales'
+[0m17:44:23.793591 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_sales
+[0m17:44:23.814596 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_sales"
+[0m17:44:23.818586 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_sales
+[0m17:44:23.822588 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:44:23.823587 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_sales`
+[0m17:44:23.825586 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_sales"
+[0m17:44:23.826585 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_sales"
+[0m17:44:23.826585 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_sales: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_sales"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_sales`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`fact_sales`
+  )
+
+[0m17:44:23.827596 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:44:24.477707 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-db9f-1ede-b986-714ac12e58a2) - Created
+[0m17:44:25.299976 [debug] [Thread-1 (]: SQL status: OK in 1.470 seconds
+[0m17:44:25.300970 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b678-db9f-1ede-b986-714ac12e58a2, command-id=01f0b678-dbbb-1fca-a170-8f0491251f39) - Closing
+[0m17:44:25.301971 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:44:25.302970 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_sales: Close
+[0m17:44:25.302970 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-db9f-1ede-b986-714ac12e58a2) - Closing
+[0m17:44:25.502326 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a14760f-06d0-480a-8e8c-6d3a84e20eba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020081A718B0>]}
+[0m17:44:25.506325 [info ] [Thread-1 (]: 5 of 6 OK created sql view model default.bronze_sales .......................... [[32mOK[0m in 1.71s]
+[0m17:44:25.510192 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_sales
+[0m17:44:25.510192 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_store
+[0m17:44:25.511299 [info ] [Thread-1 (]: 6 of 6 START sql view model default.bronze_store ............................... [RUN]
+[0m17:44:25.513287 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_store) - Creating connection
+[0m17:44:25.513287 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_store'
+[0m17:44:25.514283 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_store
+[0m17:44:25.521188 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_store"
+[0m17:44:25.524203 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_store
+[0m17:44:25.526189 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m17:44:25.527190 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_store`
+[0m17:44:25.528188 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_store"
+[0m17:44:25.531196 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_store"
+[0m17:44:25.531196 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_store: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_store"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_store`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_store`
+  )
+
+[0m17:44:25.532257 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:44:26.222496 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-dcab-13c0-868c-b552defffb2e) - Created
+[0m17:44:27.086004 [debug] [Thread-1 (]: SQL status: OK in 1.550 seconds
+[0m17:44:27.092148 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b678-dcab-13c0-868c-b552defffb2e, command-id=01f0b678-dcc6-1f51-9fdf-d7b474ef6a1e) - Closing
+[0m17:44:27.095142 [debug] [Thread-1 (]: Applying tags to relation None
+[0m17:44:27.098131 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_store: Close
+[0m17:44:27.099135 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b678-dcab-13c0-868c-b552defffb2e) - Closing
+[0m17:44:27.347948 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a14760f-06d0-480a-8e8c-6d3a84e20eba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020081C531A0>]}
+[0m17:44:27.353237 [info ] [Thread-1 (]: 6 of 6 OK created sql view model default.bronze_store .......................... [[32mOK[0m in 1.83s]
+[0m17:44:27.358125 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_store
+[0m17:44:27.360111 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:44:27.360111 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:44:27.361107 [info ] [MainThread]: 
+[0m17:44:27.364122 [info ] [MainThread]: Finished running 6 view models in 0 hours 0 minutes and 17.46 seconds (17.46s).
+[0m17:44:27.373139 [debug] [MainThread]: Command end result
+[0m17:44:27.416157 [debug] [MainThread]: Wrote artifact WritableManifest to C:\DBT\jayana_dbt_tutorial\target\manifest.json
+[0m17:44:27.419157 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\DBT\jayana_dbt_tutorial\target\semantic_manifest.json
+[0m17:44:27.425142 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\DBT\jayana_dbt_tutorial\target\run_results.json
+[0m17:44:27.426143 [info ] [MainThread]: 
+[0m17:44:27.426143 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:44:27.427141 [info ] [MainThread]: 
+[0m17:44:27.428426 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=6
+[0m17:44:27.429425 [debug] [MainThread]: Command `dbt run` succeeded at 17:44:27.429425 after 20.54 seconds
+[0m17:44:27.429425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002006685FDA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020066F9E3C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020066F9D7F0>]}
+[0m17:44:27.430421 [debug] [MainThread]: Flushing usage events
+[0m17:44:28.497950 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:21:24.746226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016EEA4DEBA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016EEA965E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016EEA965070>]}
+
+
+============================== 10:21:24.767425 | 85b2d5d4-8b20-471a-8f18-31510ffc898d ==============================
+[0m10:21:24.767425 [info ] [MainThread]: Running with dbt=1.10.13
+[0m10:21:24.768432 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'no_print': 'None', 'printer_width': '80', 'invocation_command': 'dbt run', 'log_format': 'default', 'warn_error': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'log_path': 'C:\\DBT\\jayana_dbt_tutorial\\logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\DBT\\jayana_dbt_tutorial', 'use_colors': 'True', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m10:21:37.097527 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m10:21:37.098530 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m10:21:37.099530 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m10:21:50.127839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '85b2d5d4-8b20-471a-8f18-31510ffc898d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E90511760>]}
+[0m10:21:50.191533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '85b2d5d4-8b20-471a-8f18-31510ffc898d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E9035C350>]}
+[0m10:21:50.191533 [info ] [MainThread]: Registered adapter: databricks=1.10.14
+[0m10:21:51.195459 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m10:21:55.913495 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:21:55.913495 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:21:55.922280 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.jayana_dbt_tutorial.bronze
+[0m10:21:55.955118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '85b2d5d4-8b20-471a-8f18-31510ffc898d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E8E35FE00>]}
+[0m10:21:56.030464 [debug] [MainThread]: Wrote artifact WritableManifest to C:\DBT\jayana_dbt_tutorial\target\manifest.json
+[0m10:21:56.069124 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\DBT\jayana_dbt_tutorial\target\semantic_manifest.json
+[0m10:21:56.241509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '85b2d5d4-8b20-471a-8f18-31510ffc898d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E908D6B10>]}
+[0m10:21:56.242508 [info ] [MainThread]: Found 6 models, 6 sources, 699 macros
+[0m10:21:56.243509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '85b2d5d4-8b20-471a-8f18-31510ffc898d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E905BFC50>]}
+[0m10:21:56.245545 [info ] [MainThread]: 
+[0m10:21:56.246508 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:21:56.247509 [info ] [MainThread]: 
+[0m10:21:56.248507 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m10:21:56.249508 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m10:21:56.258035 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_dbt_tutorial) - Creating connection
+[0m10:21:56.258035 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt_tutorial'
+[0m10:21:56.271058 [debug] [ThreadPool]: Using databricks connection "list_dbt_tutorial"
+[0m10:21:56.272066 [debug] [ThreadPool]: On list_dbt_tutorial: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "connection_name": "list_dbt_tutorial"} */
+
+    show databases
+  
+[0m10:21:56.272066 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:21:57.303173 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b896-8ab9-105e-a1ad-3ddfe5e39182) - Created
+[0m10:22:41.816423 [debug] [ThreadPool]: SQL status: OK in 45.540 seconds
+[0m10:22:41.928391 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f0b896-8ab9-105e-a1ad-3ddfe5e39182, command-id=01f0b896-8ae8-149c-bd26-e1b397537cd0) - Closing
+[0m10:22:42.206847 [debug] [ThreadPool]: On list_dbt_tutorial: Close
+[0m10:22:42.210848 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b896-8ab9-105e-a1ad-3ddfe5e39182) - Closing
+[0m10:22:42.417037 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_dbt_tutorial_default) - Creating connection
+[0m10:22:42.417037 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt_tutorial_default'
+[0m10:22:42.444518 [debug] [ThreadPool]: Using databricks connection "list_dbt_tutorial_default"
+[0m10:22:42.445524 [debug] [ThreadPool]: On list_dbt_tutorial_default: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "connection_name": "list_dbt_tutorial_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'dbt_tutorial' 
+  AND table_schema = 'default'
+
+  
+[0m10:22:42.446247 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:22:43.231178 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b896-a624-17f7-b9a4-7e57b196432e) - Created
+[0m10:22:47.445492 [debug] [ThreadPool]: SQL status: OK in 5.000 seconds
+[0m10:22:47.453485 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f0b896-a624-17f7-b9a4-7e57b196432e, command-id=01f0b896-a641-1c1f-a154-194a9b24f35d) - Closing
+[0m10:22:47.454487 [debug] [ThreadPool]: On list_dbt_tutorial_default: Close
+[0m10:22:47.455488 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b896-a624-17f7-b9a4-7e57b196432e) - Closing
+[0m10:22:47.689081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '85b2d5d4-8b20-471a-8f18-31510ffc898d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016EE6DD7980>]}
+[0m10:22:47.711079 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_customer
+[0m10:22:47.712079 [info ] [Thread-1 (]: 1 of 6 START sql view model default.bronze_customer ............................ [RUN]
+[0m10:22:47.713079 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_customer) - Creating connection
+[0m10:22:47.714191 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_customer'
+[0m10:22:47.714191 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_customer
+[0m10:22:47.724978 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_customer"
+[0m10:22:47.733104 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_customer
+[0m10:22:47.749616 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m10:22:47.751510 [warn ] [Thread-1 (]: [[33mWARNING[0m]: Use revamped materializations based on separating create and insert.  This allows more performant column comments, as well as new column features.
+You may opt into the new behavior sooner by setting `flags.use_materialization_v2` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m10:22:47.752515 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '85b2d5d4-8b20-471a-8f18-31510ffc898d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E90A70320>]}
+[0m10:22:47.765942 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_customer`
+[0m10:22:47.775941 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_customer"
+[0m10:22:47.779644 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_customer"
+[0m10:22:47.779644 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_customer: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_customer"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_customer`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_customer`
+  )
+
+[0m10:22:47.780896 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:22:48.494124 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b896-a94d-122f-a592-cd179eac56eb) - Created
+[0m10:22:51.428967 [debug] [Thread-1 (]: SQL status: OK in 3.650 seconds
+[0m10:22:51.433327 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b896-a94d-122f-a592-cd179eac56eb, command-id=01f0b896-a965-1112-9db5-2d4b0d556ea8) - Closing
+[0m10:22:51.454757 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:22:51.455753 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_customer: Close
+[0m10:22:51.456752 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b896-a94d-122f-a592-cd179eac56eb) - Closing
+[0m10:22:51.670910 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '85b2d5d4-8b20-471a-8f18-31510ffc898d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016EE9E24B90>]}
+[0m10:22:51.671913 [info ] [Thread-1 (]: 1 of 6 OK created sql view model default.bronze_customer ....................... [[32mOK[0m in 3.91s]
+[0m10:22:51.674914 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_customer
+[0m10:22:51.675912 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_date
+[0m10:22:51.677909 [info ] [Thread-1 (]: 2 of 6 START sql view model default.bronze_date ................................ [RUN]
+[0m10:22:51.679909 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_date) - Creating connection
+[0m10:22:51.681024 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_date'
+[0m10:22:51.681915 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_date
+[0m10:22:51.688906 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_date"
+[0m10:22:51.690233 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_date
+[0m10:22:51.692172 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m10:22:51.692172 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_date`
+[0m10:22:51.692172 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_date"
+[0m10:22:51.698382 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_date"
+[0m10:22:51.698382 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_date: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_date"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_date`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_date`
+  )
+
+[0m10:22:51.699423 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:22:52.362395 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b896-ab98-1055-ad39-5b943b57e70f) - Created
+[0m10:22:53.880977 [debug] [Thread-1 (]: SQL status: OK in 2.180 seconds
+[0m10:22:53.883045 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b896-ab98-1055-ad39-5b943b57e70f, command-id=01f0b896-abb3-1304-8a54-d048c82c1679) - Closing
+[0m10:22:53.884926 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:22:53.886938 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_date: Close
+[0m10:22:53.886938 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b896-ab98-1055-ad39-5b943b57e70f) - Closing
+[0m10:22:54.086707 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '85b2d5d4-8b20-471a-8f18-31510ffc898d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E90A47D70>]}
+[0m10:22:54.090019 [info ] [Thread-1 (]: 2 of 6 OK created sql view model default.bronze_date ........................... [[32mOK[0m in 2.41s]
+[0m10:22:54.093526 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_date
+[0m10:22:54.093526 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_product
+[0m10:22:54.097227 [info ] [Thread-1 (]: 3 of 6 START sql view model default.bronze_product ............................. [RUN]
+[0m10:22:54.099759 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_product) - Creating connection
+[0m10:22:54.100824 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_product'
+[0m10:22:54.101865 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_product
+[0m10:22:54.108755 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_product"
+[0m10:22:54.110784 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_product
+[0m10:22:54.113453 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m10:22:54.114461 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_product`
+[0m10:22:54.115496 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_product"
+[0m10:22:54.118747 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_product"
+[0m10:22:54.118747 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_product: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_product"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_product`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_product`
+  )
+
+[0m10:22:54.120196 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:22:54.803308 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b896-ad0d-1926-afe9-7627605e0669) - Created
+[0m10:22:56.037449 [debug] [Thread-1 (]: SQL status: OK in 1.920 seconds
+[0m10:22:56.042781 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b896-ad0d-1926-afe9-7627605e0669, command-id=01f0b896-ad27-1871-b5ad-c38a6e88612f) - Closing
+[0m10:22:56.045811 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:22:56.050826 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_product: Close
+[0m10:22:56.054370 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b896-ad0d-1926-afe9-7627605e0669) - Closing
+[0m10:22:56.236731 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '85b2d5d4-8b20-471a-8f18-31510ffc898d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E90B0ED80>]}
+[0m10:22:56.238736 [info ] [Thread-1 (]: 3 of 6 OK created sql view model default.bronze_product ........................ [[32mOK[0m in 2.14s]
+[0m10:22:56.242236 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_product
+[0m10:22:56.243241 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_returns
+[0m10:22:56.244251 [info ] [Thread-1 (]: 4 of 6 START sql view model default.bronze_returns ............................. [RUN]
+[0m10:22:56.246230 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_returns) - Creating connection
+[0m10:22:56.247244 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_returns'
+[0m10:22:56.248252 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_returns
+[0m10:22:56.253238 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_returns"
+[0m10:22:56.254236 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_returns
+[0m10:22:56.257241 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m10:22:56.258237 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_returns`
+[0m10:22:56.259236 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_returns"
+[0m10:22:56.260240 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_returns"
+[0m10:22:56.261236 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_returns: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_returns"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_returns`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`fact_returns`
+  )
+
+[0m10:22:56.261236 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:22:57.001318 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b896-ae5e-1c86-896c-f23d33da6872) - Created
+[0m10:22:58.293181 [debug] [Thread-1 (]: SQL status: OK in 2.030 seconds
+[0m10:22:58.299627 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b896-ae5e-1c86-896c-f23d33da6872, command-id=01f0b896-ae7d-161d-bc71-a33db35b5dd9) - Closing
+[0m10:22:58.303631 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:22:58.307633 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_returns: Close
+[0m10:22:58.310629 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b896-ae5e-1c86-896c-f23d33da6872) - Closing
+[0m10:22:58.500366 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '85b2d5d4-8b20-471a-8f18-31510ffc898d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E90B38AA0>]}
+[0m10:22:58.503363 [info ] [Thread-1 (]: 4 of 6 OK created sql view model default.bronze_returns ........................ [[32mOK[0m in 2.25s]
+[0m10:22:58.508315 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_returns
+[0m10:22:58.509481 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_sales
+[0m10:22:58.511363 [info ] [Thread-1 (]: 5 of 6 START sql view model default.bronze_sales ............................... [RUN]
+[0m10:22:58.515830 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_sales) - Creating connection
+[0m10:22:58.517824 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_sales'
+[0m10:22:58.519836 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_sales
+[0m10:22:58.533824 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_sales"
+[0m10:22:58.535903 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_sales
+[0m10:22:58.538813 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m10:22:58.539811 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_sales`
+[0m10:22:58.541189 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_sales"
+[0m10:22:58.544724 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_sales"
+[0m10:22:58.545842 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_sales: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_sales"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_sales`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`fact_sales`
+  )
+
+[0m10:22:58.546839 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:22:59.255647 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b896-afb7-11f1-ba57-8d12b67202e9) - Created
+[0m10:23:00.434493 [debug] [Thread-1 (]: SQL status: OK in 1.890 seconds
+[0m10:23:00.441186 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b896-afb7-11f1-ba57-8d12b67202e9, command-id=01f0b896-afd4-197e-8df7-713f2d6ead91) - Closing
+[0m10:23:00.444953 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:23:00.448937 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_sales: Close
+[0m10:23:00.449931 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b896-afb7-11f1-ba57-8d12b67202e9) - Closing
+[0m10:23:00.639141 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '85b2d5d4-8b20-471a-8f18-31510ffc898d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E908D6090>]}
+[0m10:23:00.644141 [info ] [Thread-1 (]: 5 of 6 OK created sql view model default.bronze_sales .......................... [[32mOK[0m in 2.12s]
+[0m10:23:00.652364 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_sales
+[0m10:23:00.655360 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_store
+[0m10:23:00.658356 [info ] [Thread-1 (]: 6 of 6 START sql view model default.bronze_store ............................... [RUN]
+[0m10:23:00.666195 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_store) - Creating connection
+[0m10:23:00.666195 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_store'
+[0m10:23:00.667174 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_store
+[0m10:23:00.678180 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_store"
+[0m10:23:00.681293 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_store
+[0m10:23:00.684802 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m10:23:00.686816 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_store`
+[0m10:23:00.687817 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_store"
+[0m10:23:00.691333 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_store"
+[0m10:23:00.692465 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_store: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_store"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_store`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_store`
+  )
+
+[0m10:23:00.692465 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:23:01.357375 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b896-b0f5-1477-ae48-fab19fec484b) - Created
+[0m10:23:02.489426 [debug] [Thread-1 (]: SQL status: OK in 1.800 seconds
+[0m10:23:02.491716 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b896-b0f5-1477-ae48-fab19fec484b, command-id=01f0b896-b10f-1101-b2ca-137d2f912a04) - Closing
+[0m10:23:02.493782 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:23:02.494898 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_store: Close
+[0m10:23:02.495907 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b896-b0f5-1477-ae48-fab19fec484b) - Closing
+[0m10:23:02.684017 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '85b2d5d4-8b20-471a-8f18-31510ffc898d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E90A5AE70>]}
+[0m10:23:02.684017 [info ] [Thread-1 (]: 6 of 6 OK created sql view model default.bronze_store .......................... [[32mOK[0m in 2.02s]
+[0m10:23:02.684017 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_store
+[0m10:23:02.684017 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m10:23:02.684017 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m10:23:02.691325 [info ] [MainThread]: 
+[0m10:23:02.692332 [info ] [MainThread]: Finished running 6 view models in 0 hours 1 minutes and 6.44 seconds (66.44s).
+[0m10:23:02.695814 [debug] [MainThread]: Command end result
+[0m10:23:02.724974 [debug] [MainThread]: Wrote artifact WritableManifest to C:\DBT\jayana_dbt_tutorial\target\manifest.json
+[0m10:23:02.728263 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\DBT\jayana_dbt_tutorial\target\semantic_manifest.json
+[0m10:23:02.736552 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\DBT\jayana_dbt_tutorial\target\run_results.json
+[0m10:23:02.736552 [info ] [MainThread]: 
+[0m10:23:02.737565 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:23:02.738616 [info ] [MainThread]: 
+[0m10:23:02.739564 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=6
+[0m10:23:02.739967 [debug] [MainThread]: Command `dbt run` succeeded at 10:23:02.739967 after 98.18 seconds
+[0m10:23:02.741093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016EEA4A50A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016EEA4A4D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016EEA4A4F80>]}
+[0m10:23:02.741093 [debug] [MainThread]: Flushing usage events
+[0m10:23:03.758838 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:26:39.040461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248B8640D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248B8E40170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248B8E41310>]}
+
+
+============================== 10:26:39.057118 | b1b19a27-4ece-43be-b53a-33acb39f7c96 ==============================
+[0m10:26:39.057118 [info ] [MainThread]: Running with dbt=1.10.13
+[0m10:26:39.059532 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'target_path': 'None', 'profiles_dir': 'C:\\DBT\\jayana_dbt_tutorial', 'printer_width': '80', 'log_format': 'default', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'C:\\DBT\\jayana_dbt_tutorial\\logs', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt debug', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m10:26:39.117229 [info ] [MainThread]: dbt version: 1.10.13
+[0m10:26:39.118226 [info ] [MainThread]: python version: 3.12.10
+[0m10:26:39.118226 [info ] [MainThread]: python path: C:\DBT\.venv\Scripts\python.exe
+[0m10:26:39.119362 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m10:26:39.981543 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m10:26:39.981543 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m10:26:39.981543 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m10:26:40.634088 [info ] [MainThread]: Using profiles dir at C:\DBT\jayana_dbt_tutorial
+[0m10:26:40.634088 [info ] [MainThread]: Using profiles.yml file at C:\DBT\jayana_dbt_tutorial\profiles.yml
+[0m10:26:40.634088 [info ] [MainThread]: Using dbt_project.yml file at C:\DBT\jayana_dbt_tutorial\dbt_project.yml
+[0m10:26:40.634088 [info ] [MainThread]: adapter type: databricks
+[0m10:26:40.634088 [info ] [MainThread]: adapter version: 1.10.14
+[0m10:26:40.737510 [info ] [MainThread]: Configuration:
+[0m10:26:40.738450 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:26:40.738450 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:26:40.738450 [info ] [MainThread]: Required dependencies:
+[0m10:26:40.740222 [debug] [MainThread]: Executing "git --help"
+[0m10:26:40.791475 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:26:40.791475 [debug] [MainThread]: STDERR: "b''"
+[0m10:26:40.791475 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:26:40.791475 [info ] [MainThread]: Connection:
+[0m10:26:40.791475 [info ] [MainThread]:   host: dbc-d3a2313e-5682.cloud.databricks.com
+[0m10:26:40.799576 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/d40e3b07ecd461d7
+[0m10:26:40.801382 [info ] [MainThread]:   catalog: dbt_tutorial
+[0m10:26:40.801382 [info ] [MainThread]:   schema: default
+[0m10:26:40.805216 [info ] [MainThread]: Registered adapter: databricks=1.10.14
+[0m10:26:41.320452 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m10:26:41.320452 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m10:26:41.320452 [debug] [MainThread]: Using databricks connection "debug"
+[0m10:26:41.320452 [debug] [MainThread]: On debug: select 1 as id
+[0m10:26:41.322459 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:26:42.134394 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f0b897-3488-1a67-a073-1c5a983e543d) - Created
+[0m10:26:42.651690 [debug] [MainThread]: SQL status: OK in 1.330 seconds
+[0m10:26:42.657716 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f0b897-3488-1a67-a073-1c5a983e543d, command-id=01f0b897-34aa-1350-919f-cd6f4e79f6f8) - Closing
+[0m10:26:42.660139 [debug] [MainThread]: On debug: Close
+[0m10:26:42.662250 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f0b897-3488-1a67-a073-1c5a983e543d) - Closing
+[0m10:26:42.844470 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:26:42.845993 [info ] [MainThread]: [32mAll checks passed![0m
+[0m10:26:42.847343 [debug] [MainThread]: Command `dbt debug` succeeded at 10:26:42.847343 after 4.09 seconds
+[0m10:26:42.847343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248B8AB0E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248DD2132F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248B8CA5DF0>]}
+[0m10:26:42.847343 [debug] [MainThread]: Flushing usage events
+[0m10:26:43.789627 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:30:17.217554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213EF971AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213ECD04560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213EAB68260>]}
+
+
+============================== 10:30:17.223324 | 09f68707-5a47-47f1-9f8c-38cf2a2bc785 ==============================
+[0m10:30:17.223324 [info ] [MainThread]: Running with dbt=1.10.13
+[0m10:30:17.225160 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'profiles_dir': 'C:\\DBT\\jayana_dbt_tutorial', 'target_path': 'None', 'log_format': 'default', 'cache_selected_only': 'False', 'warn_error': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'C:\\DBT\\jayana_dbt_tutorial\\logs', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt run', 'printer_width': '80', 'write_json': 'True'}
+[0m10:30:18.073396 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m10:30:18.073396 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m10:30:18.073396 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m10:30:18.847200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '09f68707-5a47-47f1-9f8c-38cf2a2bc785', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213FFCA5A90>]}
+[0m10:30:18.905655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '09f68707-5a47-47f1-9f8c-38cf2a2bc785', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213EC55B140>]}
+[0m10:30:18.905655 [info ] [MainThread]: Registered adapter: databricks=1.10.14
+[0m10:30:19.332762 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m10:30:19.511405 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:30:19.511405 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:30:19.552030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '09f68707-5a47-47f1-9f8c-38cf2a2bc785', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213FFB4D370>]}
+[0m10:30:19.618528 [debug] [MainThread]: Wrote artifact WritableManifest to C:\DBT\jayana_dbt_tutorial\target\manifest.json
+[0m10:30:19.620966 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\DBT\jayana_dbt_tutorial\target\semantic_manifest.json
+[0m10:30:19.626823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '09f68707-5a47-47f1-9f8c-38cf2a2bc785', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214010B02F0>]}
+[0m10:30:19.626823 [info ] [MainThread]: Found 6 models, 6 sources, 699 macros
+[0m10:30:19.626823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '09f68707-5a47-47f1-9f8c-38cf2a2bc785', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213ECBE81A0>]}
+[0m10:30:19.634854 [info ] [MainThread]: 
+[0m10:30:19.634854 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:30:19.634854 [info ] [MainThread]: 
+[0m10:30:19.634854 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m10:30:19.634854 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m10:30:19.642914 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_dbt_tutorial) - Creating connection
+[0m10:30:19.642914 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt_tutorial'
+[0m10:30:19.654097 [debug] [ThreadPool]: Using databricks connection "list_dbt_tutorial"
+[0m10:30:19.654097 [debug] [ThreadPool]: On list_dbt_tutorial: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "connection_name": "list_dbt_tutorial"} */
+
+    show databases
+  
+[0m10:30:19.654097 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:30:20.440240 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b897-b6aa-1217-be87-05082868ff37) - Created
+[0m10:30:20.858737 [debug] [ThreadPool]: SQL status: OK in 1.200 seconds
+[0m10:30:20.866684 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f0b897-b6aa-1217-be87-05082868ff37, command-id=01f0b897-b6c6-11c4-adda-5a2d71e00205) - Closing
+[0m10:30:20.867651 [debug] [ThreadPool]: On list_dbt_tutorial: Close
+[0m10:30:20.867651 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b897-b6aa-1217-be87-05082868ff37) - Closing
+[0m10:30:21.070026 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_dbt_tutorial_default) - Creating connection
+[0m10:30:21.072047 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt_tutorial_default'
+[0m10:30:21.089595 [debug] [ThreadPool]: Using databricks connection "list_dbt_tutorial_default"
+[0m10:30:21.090704 [debug] [ThreadPool]: On list_dbt_tutorial_default: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "connection_name": "list_dbt_tutorial_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'dbt_tutorial' 
+  AND table_schema = 'default'
+
+  
+[0m10:30:21.091817 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:30:21.884079 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b897-b783-1ae7-8c90-1b4b13f866c8) - Created
+[0m10:30:22.437380 [debug] [ThreadPool]: SQL status: OK in 1.350 seconds
+[0m10:30:22.451969 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f0b897-b783-1ae7-8c90-1b4b13f866c8, command-id=01f0b897-b7a2-13e0-a655-eb81501ef6a3) - Closing
+[0m10:30:22.454000 [debug] [ThreadPool]: On list_dbt_tutorial_default: Close
+[0m10:30:22.456024 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0b897-b783-1ae7-8c90-1b4b13f866c8) - Closing
+[0m10:30:22.709745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '09f68707-5a47-47f1-9f8c-38cf2a2bc785', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213FFC86150>]}
+[0m10:30:22.726514 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_customer
+[0m10:30:22.726514 [info ] [Thread-1 (]: 1 of 6 START sql table model default.bronze_customer ........................... [RUN]
+[0m10:30:22.729431 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_customer) - Creating connection
+[0m10:30:22.729431 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_customer'
+[0m10:30:22.729431 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_customer
+[0m10:30:22.746173 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_customer"
+[0m10:30:22.746173 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_customer
+[0m10:30:22.764484 [debug] [Thread-1 (]: MATERIALIZING TABLE
+[0m10:30:22.764484 [warn ] [Thread-1 (]: [[33mWARNING[0m]: Use revamped materializations based on separating create and insert.  This allows more performant column comments, as well as new column features.
+You may opt into the new behavior sooner by setting `flags.use_materialization_v2` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m10:30:22.764484 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '09f68707-5a47-47f1-9f8c-38cf2a2bc785', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002140128DB80>]}
+[0m10:30:22.778906 [debug] [Thread-1 (]: Applying DROP to: `dbt_tutorial`.`default`.`bronze_customer`
+[0m10:30:22.780981 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_customer"
+[0m10:30:22.780981 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_customer: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_customer"} */
+DROP VIEW IF EXISTS `dbt_tutorial`.`default`.`bronze_customer`
+[0m10:30:22.780981 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:30:23.420506 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b897-b871-1af5-a809-2ed76da6fbf2) - Created
+[0m10:30:24.370063 [debug] [Thread-1 (]: SQL status: OK in 1.590 seconds
+[0m10:30:24.374305 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b897-b871-1af5-a809-2ed76da6fbf2, command-id=01f0b897-b88d-1ea6-a84e-83fcd34a54e0) - Closing
+[0m10:30:24.414849 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_customer"
+[0m10:30:24.414849 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_customer"
+[0m10:30:24.414849 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_customer: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_customer"} */
+
+  
+    
+        create or replace table `dbt_tutorial`.`default`.`bronze_customer`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_customer`
+  
+[0m10:30:32.733896 [debug] [Thread-1 (]: SQL status: OK in 8.320 seconds
+[0m10:30:32.734897 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b897-b871-1af5-a809-2ed76da6fbf2, command-id=01f0b897-b928-1ec4-a583-9a524e82b278) - Closing
+[0m10:30:32.953797 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:30:32.969228 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_customer: Close
+[0m10:30:32.970192 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b897-b871-1af5-a809-2ed76da6fbf2) - Closing
+[0m10:30:33.155091 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '09f68707-5a47-47f1-9f8c-38cf2a2bc785', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213ECF08110>]}
+[0m10:30:33.158091 [info ] [Thread-1 (]: 1 of 6 OK created sql table model default.bronze_customer ...................... [[32mOK[0m in 10.42s]
+[0m10:30:33.161093 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_customer
+[0m10:30:33.163112 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_date
+[0m10:30:33.164110 [info ] [Thread-1 (]: 2 of 6 START sql view model default.bronze_date ................................ [RUN]
+[0m10:30:33.166109 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_date) - Creating connection
+[0m10:30:33.167111 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_date'
+[0m10:30:33.168107 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_date
+[0m10:30:33.173104 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_date"
+[0m10:30:33.174105 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_date
+[0m10:30:33.188617 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m10:30:33.202669 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_date`
+[0m10:30:33.203672 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_date"
+[0m10:30:33.204672 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_date"
+[0m10:30:33.204672 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_date: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_date"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_date`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_date`
+  )
+
+[0m10:30:33.205670 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:30:33.859701 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b897-beac-1c9f-af85-389e8a991c93) - Created
+[0m10:30:34.794256 [debug] [Thread-1 (]: SQL status: OK in 1.590 seconds
+[0m10:30:34.803278 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b897-beac-1c9f-af85-389e8a991c93, command-id=01f0b897-bec5-1fe6-9f0e-6f083578e143) - Closing
+[0m10:30:34.808249 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:30:34.815235 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_date: Close
+[0m10:30:34.818318 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b897-beac-1c9f-af85-389e8a991c93) - Closing
+[0m10:30:34.992995 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '09f68707-5a47-47f1-9f8c-38cf2a2bc785', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021401215EE0>]}
+[0m10:30:34.995094 [info ] [Thread-1 (]: 2 of 6 OK created sql view model default.bronze_date ........................... [[32mOK[0m in 1.83s]
+[0m10:30:34.996243 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_date
+[0m10:30:34.998364 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_product
+[0m10:30:34.999371 [info ] [Thread-1 (]: 3 of 6 START sql view model default.bronze_product ............................. [RUN]
+[0m10:30:35.002280 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_product) - Creating connection
+[0m10:30:35.003373 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_product'
+[0m10:30:35.004257 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_product
+[0m10:30:35.012259 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_product"
+[0m10:30:35.014253 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_product
+[0m10:30:35.016490 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m10:30:35.016490 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_product`
+[0m10:30:35.016490 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_product"
+[0m10:30:35.016490 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_product"
+[0m10:30:35.016490 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_product: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_product"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_product`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_product`
+  )
+
+[0m10:30:35.016490 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:30:35.756924 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b897-bfce-1849-a2f1-c40277246c1b) - Created
+[0m10:30:36.647354 [debug] [Thread-1 (]: SQL status: OK in 1.630 seconds
+[0m10:30:36.650445 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b897-bfce-1849-a2f1-c40277246c1b, command-id=01f0b897-bfed-1c93-b178-c6226164a143) - Closing
+[0m10:30:36.651120 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:30:36.654415 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_product: Close
+[0m10:30:36.655410 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b897-bfce-1849-a2f1-c40277246c1b) - Closing
+[0m10:30:36.833338 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '09f68707-5a47-47f1-9f8c-38cf2a2bc785', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214013109B0>]}
+[0m10:30:36.838340 [info ] [Thread-1 (]: 3 of 6 OK created sql view model default.bronze_product ........................ [[32mOK[0m in 1.83s]
+[0m10:30:36.841175 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_product
+[0m10:30:36.842280 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_returns
+[0m10:30:36.842280 [info ] [Thread-1 (]: 4 of 6 START sql table model default.bronze_returns ............................ [RUN]
+[0m10:30:36.843466 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_returns) - Creating connection
+[0m10:30:36.843466 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_returns'
+[0m10:30:36.844574 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_returns
+[0m10:30:36.856569 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_returns"
+[0m10:30:36.858484 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_returns
+[0m10:30:36.864557 [debug] [Thread-1 (]: MATERIALIZING TABLE
+[0m10:30:36.868468 [debug] [Thread-1 (]: Applying DROP to: `dbt_tutorial`.`default`.`bronze_returns`
+[0m10:30:36.869473 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_returns"
+[0m10:30:36.870467 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_returns: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_returns"} */
+DROP VIEW IF EXISTS `dbt_tutorial`.`default`.`bronze_returns`
+[0m10:30:36.870467 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:30:37.597672 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b897-c0e8-1796-8405-5da3244ee3ee) - Created
+[0m10:30:38.265347 [debug] [Thread-1 (]: SQL status: OK in 1.390 seconds
+[0m10:30:38.269725 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b897-c0e8-1796-8405-5da3244ee3ee, command-id=01f0b897-c105-1267-99fe-d267d1fb6dae) - Closing
+[0m10:30:38.273071 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_returns"
+[0m10:30:38.273071 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_returns"
+[0m10:30:38.276184 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_returns: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_returns"} */
+
+  
+    
+        create or replace table `dbt_tutorial`.`default`.`bronze_returns`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`fact_returns`
+  
+[0m10:30:41.857423 [debug] [Thread-1 (]: SQL status: OK in 3.580 seconds
+[0m10:30:41.861802 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b897-c0e8-1796-8405-5da3244ee3ee, command-id=01f0b897-c167-14b9-9d49-4c99462f75cc) - Closing
+[0m10:30:41.867953 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:30:41.879079 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_returns: Close
+[0m10:30:41.880059 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b897-c0e8-1796-8405-5da3244ee3ee) - Closing
+[0m10:30:42.053730 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '09f68707-5a47-47f1-9f8c-38cf2a2bc785', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214010B1640>]}
+[0m10:30:42.056062 [info ] [Thread-1 (]: 4 of 6 OK created sql table model default.bronze_returns ....................... [[32mOK[0m in 5.21s]
+[0m10:30:42.058551 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_returns
+[0m10:30:42.060457 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_sales
+[0m10:30:42.062471 [info ] [Thread-1 (]: 5 of 6 START sql view model default.bronze_sales ............................... [RUN]
+[0m10:30:42.064606 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_sales) - Creating connection
+[0m10:30:42.065604 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_sales'
+[0m10:30:42.067457 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_sales
+[0m10:30:42.096758 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_sales"
+[0m10:30:42.105687 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_sales
+[0m10:30:42.112830 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m10:30:42.114825 [debug] [Thread-1 (]: Creating view `dbt_tutorial`.`default`.`bronze_sales`
+[0m10:30:42.116699 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_sales"
+[0m10:30:42.118834 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_sales"
+[0m10:30:42.119725 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_sales: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_sales"} */
+
+  
+  
+  create or replace view `dbt_tutorial`.`default`.`bronze_sales`
+  
+  as (
+    SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`fact_sales`
+  )
+
+[0m10:30:42.120711 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:30:42.903429 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b897-c411-1d81-b905-5b14492fd4cc) - Created
+[0m10:30:43.809963 [debug] [Thread-1 (]: SQL status: OK in 1.690 seconds
+[0m10:30:43.820934 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b897-c411-1d81-b905-5b14492fd4cc, command-id=01f0b897-c42d-10d4-8228-358fa7fd8120) - Closing
+[0m10:30:43.828112 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:30:43.832568 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_sales: Close
+[0m10:30:43.840001 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b897-c411-1d81-b905-5b14492fd4cc) - Closing
+[0m10:30:44.023267 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '09f68707-5a47-47f1-9f8c-38cf2a2bc785', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002140130B050>]}
+[0m10:30:44.025389 [info ] [Thread-1 (]: 5 of 6 OK created sql view model default.bronze_sales .......................... [[32mOK[0m in 1.96s]
+[0m10:30:44.030597 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_sales
+[0m10:30:44.031579 [debug] [Thread-1 (]: Began running node model.jayana_dbt_tutorial.bronze_store
+[0m10:30:44.036055 [info ] [Thread-1 (]: 6 of 6 START sql table model default.bronze_store .............................. [RUN]
+[0m10:30:44.039622 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.jayana_dbt_tutorial.bronze_store) - Creating connection
+[0m10:30:44.041149 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jayana_dbt_tutorial.bronze_store'
+[0m10:30:44.041149 [debug] [Thread-1 (]: Began compiling node model.jayana_dbt_tutorial.bronze_store
+[0m10:30:44.052346 [debug] [Thread-1 (]: Writing injected SQL for node "model.jayana_dbt_tutorial.bronze_store"
+[0m10:30:44.052346 [debug] [Thread-1 (]: Began executing node model.jayana_dbt_tutorial.bronze_store
+[0m10:30:44.060626 [debug] [Thread-1 (]: MATERIALIZING TABLE
+[0m10:30:44.094083 [debug] [Thread-1 (]: Applying DROP to: `dbt_tutorial`.`default`.`bronze_store`
+[0m10:30:44.100248 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_store"
+[0m10:30:44.108458 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_store: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_store"} */
+DROP VIEW IF EXISTS `dbt_tutorial`.`default`.`bronze_store`
+[0m10:30:44.108458 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:30:45.137168 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b897-c561-1f7d-b790-2dbfb3c2a3e5) - Created
+[0m10:30:45.764344 [debug] [Thread-1 (]: SQL status: OK in 1.650 seconds
+[0m10:30:45.766342 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b897-c561-1f7d-b790-2dbfb3c2a3e5, command-id=01f0b897-c57f-1044-8517-04be387242c8) - Closing
+[0m10:30:45.769342 [debug] [Thread-1 (]: Writing runtime sql for node "model.jayana_dbt_tutorial.bronze_store"
+[0m10:30:45.772341 [debug] [Thread-1 (]: Using databricks connection "model.jayana_dbt_tutorial.bronze_store"
+[0m10:30:45.773347 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_store: /* {"app": "dbt", "dbt_version": "1.10.13", "dbt_databricks_version": "1.10.14", "databricks_sql_connector_version": "4.0.5", "profile_name": "jayana_dbt_tutorial", "target_name": "dev", "node_id": "model.jayana_dbt_tutorial.bronze_store"} */
+
+  
+    
+        create or replace table `dbt_tutorial`.`default`.`bronze_store`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      SELECT 
+    *
+FROM 
+    `dbt_tutorial`.`source`.`dim_store`
+  
+[0m10:30:50.051165 [debug] [Thread-1 (]: SQL status: OK in 4.270 seconds
+[0m10:30:50.057526 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f0b897-c561-1f7d-b790-2dbfb3c2a3e5, command-id=01f0b897-c5e0-1861-953c-5d426eeb7022) - Closing
+[0m10:30:50.062467 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:30:50.073397 [debug] [Thread-1 (]: On model.jayana_dbt_tutorial.bronze_store: Close
+[0m10:30:50.075407 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f0b897-c561-1f7d-b790-2dbfb3c2a3e5) - Closing
+[0m10:30:50.258026 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '09f68707-5a47-47f1-9f8c-38cf2a2bc785', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021401363440>]}
+[0m10:30:50.259026 [info ] [Thread-1 (]: 6 of 6 OK created sql table model default.bronze_store ......................... [[32mOK[0m in 6.22s]
+[0m10:30:50.260032 [debug] [Thread-1 (]: Finished running node model.jayana_dbt_tutorial.bronze_store
+[0m10:30:50.261321 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m10:30:50.262324 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m10:30:50.263326 [info ] [MainThread]: 
+[0m10:30:50.264323 [info ] [MainThread]: Finished running 3 table models, 3 view models in 0 hours 0 minutes and 30.63 seconds (30.63s).
+[0m10:30:50.265323 [debug] [MainThread]: Command end result
+[0m10:30:50.289842 [debug] [MainThread]: Wrote artifact WritableManifest to C:\DBT\jayana_dbt_tutorial\target\manifest.json
+[0m10:30:50.292845 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\DBT\jayana_dbt_tutorial\target\semantic_manifest.json
+[0m10:30:50.299841 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\DBT\jayana_dbt_tutorial\target\run_results.json
+[0m10:30:50.299841 [info ] [MainThread]: 
+[0m10:30:50.300850 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:30:50.301842 [info ] [MainThread]: 
+[0m10:30:50.301842 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=6
+[0m10:30:50.303846 [debug] [MainThread]: Command `dbt run` succeeded at 10:30:50.303846 after 33.27 seconds
+[0m10:30:50.303846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213ECD04560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213FEABD8E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213EF5EBFE0>]}
+[0m10:30:50.303846 [debug] [MainThread]: Flushing usage events
+[0m10:30:51.404864 [debug] [MainThread]: An error was encountered while trying to flush usage events
